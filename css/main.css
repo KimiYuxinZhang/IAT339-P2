@@ -2,12 +2,16 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+@font-face {
+  font-family: 'body-font'; 
+  src: url('../assets/Comfortaa-Light.ttf'); 
+}
 *{
   box-sizing: border-box;
 }
 body {
   /*change font to -futura*/
-  font-family: futura, sans-serif;
+  font-family: 'body-font', sans-serif;
   padding-bottom: 2rem;
 }
 
