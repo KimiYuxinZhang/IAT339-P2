@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Checkout page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1 ">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav>
+    <ul>
+      <li><a href="index.html">Home - Style Guide</a></li>
+      <li><a href="listing_page.html">Product Listing</a></li>
+      <li><a href="checkout_page.html" >Checkout Page</a> </li>
+      <li><a href="about_page.html">About us</a></li>
+      
+    </ul>
+  </nav>
+  
+  <section class="checkout-cart">
+    <div class="checkout-cart-title">
+        <h1> Your Itinerary</h1>
+        <h2></h2>
+    </div>
+        
+    <!-- day 1-->
+    <div class="checkout-cart-days">
+        <div class="checkout-cart-items">
+            <div>
+                <h3>Day 1 : April 15, Vatican City & Rome</h3>
+            </div>
+
+            <div>
+                <h4>10AM - 1PM</h4>
+                <p class="checkout-cart-items-discription"> Vatican Museum, Sistine Chapel, Saint Peter's Basilica </p>
+                <div class="checkout-cart-img">
+                    <img src="img/vatican-saint_peters_basilica.png" alt="Vatican Museum">  
+                </div>
+                <div class="checkout-cart-img">
+                    <img src="img/vatican_museum.png" alt="Vatican Museum">  
+                </div>
+            </div>
+        </div>
+        
+        <div class="checkout-cart-items">
+            <div>
+                <h4>1:30PM - 3PM</h4>
+                <p class="checkout-cart-items-discription"> Eat at "Poldo e Gianna Osteria" </p>
+                <p>Vicolo Rosini, 6, 00186 Roma RM, Italy</p>
+                <div class="checkout-cart-img">
+                    <img src="img/food-italy-carbonara.png" alt="pasta image">  
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-cart-items">
+            <div>
+                <h4>4:00PM - 7:00PM</h4>
+                <p class="checkout-cart-items-discription"> Colosseum </p>
+                <div class="checkout-cart-img">
+                    <img src="img/italy-colosseum.png" alt="colosseum">  
+                </div>
+            </div>
+        </div>
+        <div class="checkout-cart-items">
+            <div>
+                <h4>7:00PM- The next day</h4>
+                <p class="checkout-cart-items-discription"> Rest at Hotel</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- day 2 -->
+        <div class="checkout-cart-days">
+        <div class="checkout-cart-items">
+            <div>
+                <h3>Day 2 : April 16, Rome to Milan</h3>
+            </div>
+
+            <div>
+                <h4>11AM - 2PM</h4>
+                <p class="checkout-cart-items-discription"> Train to Milan</p>
+                
+            </div>
+        </div>
+        
+        <div class="checkout-cart-items">
+            <div>
+                <h4>3PM - 6PM</h4>
+                <p class="checkout-cart-items-discription"> Duomo di Milano </p>
+                <div class="checkout-cart-img">
+                    <img src="img/duomo_de_milano.png" alt="duomo_de_milano">  
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-cart-items">
+            <div>
+                <h4>7:00PM - 9:00PM</h4>
+                <p class="checkout-cart-items-discription"> Eat at "Camera Nazionale Della Cucina Italiana" </p>
+                <p>Via Torino, 2, 20123 Milano MI, Italy</p>
+                <div class="checkout-cart-img">
+                    <img src="img/food-spain-paella.png" alt="food-spain-paella">  
+                </div>
+            </div>
+        </div>
+        <div class="checkout-cart-items">
+            <div>
+                <h4>9:00PM- The next day</h4>
+                <p class="checkout-cart-items-discription"> Rest at Hotel</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="checkout-price-breakdown">
+            <h4>Total</h4>
+            <ul>
+              <li>Train: €50</li>
+              <li>Musume Ticket: €75</li>
+              <li>Meals & Transfers: €300</li>
+              <li>Hotel Stay: €850</li>
+            </ul>
+            <p class="checkout-price-total">Total Day 2: <strong>€1,275.00</strong></p>
+           
+
+            <!-- payment section-->
+            <form class="payment-container" action="#" method="POST">
+                <div class="box1">
+        
+                  <div class="box1-payment-lable">
+                    <input type="radio" id="creditcard" name="card_type" value="creditcard">
+                    <label for="creditcard">Credit Card</label>
+                  </div>
+        
+                  <div class="box1-card-icons">
+                    <img src="img/visa.png" alt="#">
+                    <img src="img/mastercard.png" alt="#">
+                    <img src="img/amex.png" alt="#">
+                    <img src="img/unionpay.png" alt="#">
+                  </div>
+                </div>
+        
+                <div class="box1">
+                  <div class="box1-payment-lable">
+                    <input type="radio" id="paypal" name="card_type" value="paypal">
+                    <label for="paypal">PayPal</label>
+                  </div>
+        
+                  <div class="box1-card-icons">
+                    <img src="img/paypal.png" alt="#">
+                  </div>
+                </div>
+        
+                <div class="box1">
+                  <div class="payment-card_details">
+                    <div class="payment-card_details-number_name">
+                      <label for="card_number">Card number</label>
+                      <input type="text" id="card_number" name="card_number" placeholder="xxxx xxxx xxxx" required>
+                      <label for="card_holder_name">Name on Card</label>
+                      <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Name on card" required>
+                    </div>
+        
+                    <div class="payment-card_details-number_name">
+                      <label for="card_expiry_date">Expiry date</label>
+                      <input type="text" id="card_expiry_date" name="card_expiry_date" placeholder="MM/YY" required>
+        
+                      <label for="card_cvv">CVV</label>
+                      <input type="text" id="card_cvv" name="card_cvv" placeholder="XXX" required>
+                      <input type="submit" value="Confirm and Pay">
+                    </div>
+                  </div>
+                </div>
+        
+        
+        
+              </form>
+          </div>
+          <div>
+           
+          </div>
+  
+  </section>
+  
+</body>
+</html>

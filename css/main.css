@@ -1,0 +1,468 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+*{
+  box-sizing: border-box;
+}
+body {
+  /*change font to -futura*/
+  font-family: futura, sans-serif;
+  padding-bottom: 2rem;
+}
+
+.element {
+  /*adding margins between section*/
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h1{
+  font-size: 4rem; 
+  padding-top: 2rem;
+  margin: 0;
+  
+  
+}
+
+h2 {
+  font-size: 2rem;
+  color:red;
+}
+
+h3 {
+  color:white;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background: #767676;
+  padding: 0.5rem;
+  
+  
+}
+
+h4 {
+  border-left: 0.5rem solid #FF5722; 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0;
+  max-width: 40rem;
+}
+
+a {
+  color:#767676;
+  text-underline-offset: 0.3rem;
+  transition: all 0.4s ease;
+}
+
+/*nav styling*/
+nav {
+  background: #d4dbdd; 
+  width:100%;
+  flex-wrap: wrap;
+}
+nav ul {
+  color:white;
+  display: flex; 
+  flex-wrap: wrap;
+  /*evenly spread content*/
+  justify-content: space-around; 
+  /*no bulllet poins*/
+  list-style: none; 
+  /*box size*/
+  padding: 1rem;
+  gap:1rem;
+}
+nav a {
+  color: #767676;
+  white-space: nowrap;  
+}
+
+nav a:hover, 
+nav a:focus {
+  text-decoration: red;
+  color: red;
+}
+/*change hover/focus color for links*/
+a:hover, 
+a:focus {
+  color: #FF5722;
+  text-decoration-thickness: 0.2rem;
+  
+}
+
+/*change hover/focus effect (red underline) for image as a link*/
+.image-element a:hover,
+.image-element a:focus{
+  border-bottom:solid;
+  color: red;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* allow further control of the styling*/
+.form-name {
+  
+  margin-top:1rem;
+
+}
+/*lable style*/
+
+label {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color:black;
+  
+}
+
+/*redy the transition effet for input:hover*/
+input{
+  border: 1.5px solid;
+  max-width: 30rem;
+  transition: all 0.4s ease;
+}
+
+/*slightly enlarge the input file when hovering*/
+input:hover{
+  transform: scale(1.05);
+}
+/*change border color when focused*/
+input:focus{
+  border-color:#FF5722;
+}
+
+
+
+/*payment form*/
+.payment-card_details{
+  margin-bottom: 0.5rem;
+}
+.payment-card_details-number_name{
+  display:flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  
+}
+.payment-card_details-number_name input {
+ 
+  padding: 0.5rem;    
+  border-color: #d4dbdd;
+ 
+}
+.payment-options{
+  margin-bottom: 0.5rem;
+}
+
+/*product listing styling*/
+.destination-grid {
+  display: flex; 
+  flex-direction: row ;
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  
+}
+.popular_destination {
+  flex:0 0 20rem;
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd; 
+  border-radius: 0.5rem; 
+  padding: 1rem; 
+  margin-right: 1rem; 
+}
+.popular_destination img {
+  width: 100%;
+  height: 13rem;
+  border-radius: 4px;
+}
+.popular_destination h2 {
+  color: #FF5722;
+  font-family: 'GT Pressura Monofutura', sans-serif; 
+  margin: 1rem 0 0.5rem;
+}
+.popular_destination a {
+  display: inline-block;
+  background-color: #767676; 
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none; 
+  border-radius: 0.1rem;
+  margin-top: 1rem;
+}
+.popular_destination a:hover,
+.popular_destination a:focus {
+  background-color: #FF5722; 
+  color: white;
+  transform: scale(1.05); 
+}
+
+
+
+
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+  
+}
+
+/*listing card css style section */
+.popular_destination{
+  margin-bottom:2rem;
+}
+.popular_destination h2 {
+  color: #FF5722;
+  font-family: 'GT Pressura Monofutura', sans-serif; 
+  line-height: 1.2; 
+  height: 2.5em; 
+}
+.destination-info {
+  margin-bottom: 1rem;
+}
+.destination-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  line-height: 1.2; 
+}
+/*vide details button style*/
+.destination-action {
+  border-top: 1px solid grey; 
+  padding-top: 1rem;
+  display: flex; 
+  justify-content: space-between;
+}
+
+/* the add button gets a different color*/
+.destination-action a.add_button {
+  background-color: #FF5722; 
+
+}
+
+
+
+/*payment-container styling flexbox*/
+.payment-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #e8f4f8;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  max-width: 50rem;
+  margin:2rem 2rem 2rem 0rem;
+}
+
+/* 
+use ">" child combinator to all divs that are direct children of my container
+reference link :https://www.w3schools.com/css/css_combinators.asp
+*/
+.payment-container >div{
+  background-color: #e8f4f8;
+  padding: 0.8rem;
+  border: 1px solid white;
+  
+  
+}
+.box1{
+  
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+.box1-payment-lable {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.box1-card-icons {
+  display: flex;
+  gap: 0.5rem; 
+}
+.box1-card-icons img{
+  height: 1.5rem;
+  gap: 0.5rem;
+}
+
+
+
+
+
+
+/* 
+  About page styling -------------------
+*/
+.about-title {
+  
+  background-image:  url('../img/about-background.jpg');
+  background-position: center;
+  background-size: cover;
+  /*parallax scrolling*/
+  background-attachment: fixed;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+.about-title h1 {
+  font-size: 8rem; 
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.about-intro {
+  color:white;
+  font-size: 1.2rem;
+  min-width:25rem;
+  max-width: 25rem;
+  margin-top: 2rem;
+  
+}
+
+.about-grid {
+  color:#767676;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 3rem;
+ 
+}
+
+.about-column {
+  flex: 1 1 15rem; 
+}
+
+.about-column strong {
+  font-size: 1.5rem;
+  color:#FF5722;
+  display: block;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid #767676;
+  padding-bottom: 1rem;
+}
+.about-grid .about-column img {
+  height: 30rem;
+}
+.about-title nav {
+  background: transparent;
+}
+.about-title nav ul {
+  padding: 0;
+}
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+
+
+
+/*checkout page styling*/
+
+
+.checkout-cart-days{
+  border:#DFDFDF solid 0.1rem;
+  border-radius: 1rem;
+  max-width: 40rem;
+  margin-bottom: 2rem;
+
+}
+.checkout-cart-items{
+  border-bottom:#DFDFDF solid 0.1rem; ;
+  max-width: 28rem;
+  margin:1rem;
+  padding:0rem 0rem 1rem 0rem;
+
+}
+.checkout-cart-items h3{
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+}
+
+
+.checkout-cart-img img{
+  height: 10rem;
+  min-width: 15rem;
+  max-width: 30rem;
+  flex: 0 0 ;
+  border-radius: 0.4rem;
+}
+
+.checkout-price-breakdown {
+  background-color: #f4f7f8;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+
+
+.checkout-price-total{
+  text-align: left;
+  border-top: 0.1rem solid #C6C6C6;
+  padding-top: 0.8rem;
+  font-size: 1.1rem;
+  color: #FF5722;
+}
+.add_button {
+  background-color: #FF5722; 
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none; 
+  border-radius: 0.1rem;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+.add_button:hover {
+  transform: scale(1.05); 
+  color: white;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
