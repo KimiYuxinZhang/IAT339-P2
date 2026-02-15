@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+STYLE GUIDE STYLING 
+Default styling for the style guide 
 */
 @font-face {
   font-family: 'body-font'; 
@@ -11,7 +11,7 @@
   --color-bg-cream: rgb(255, 254, 237);
   --color-text-brown: rgb(101, 51, 20);
   --color-sec-rose: rgb(195, 153, 142);
-
+  
 }
 *{
   box-sizing: border-box;
@@ -125,7 +125,7 @@ code {
 .form-name {
   
   margin-top:1rem;
-
+  
 }
 /******lable style Kimi *******/
 .primary-label {
@@ -184,10 +184,10 @@ input:focus{
   
 }
 .payment-card_details-number_name input {
- 
+  
   padding: 0.5rem;    
   border-color: #d4dbdd;
- 
+  
 }
 .payment-options{
   margin-bottom: 0.5rem;
@@ -244,15 +244,15 @@ input:focus{
 
 
 /* 
-  INTERACTIVE ELEMENTS -------------------
+INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.8rem 1rem;
   color: white;
-  background-color: rgb(50,50,50);
+  background-color: var(--color-text-brown);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
@@ -330,7 +330,7 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
   display: flex;
   justify-content:space-between;
   align-items: center;
-
+  
 }
 .box1-payment-lable {
   display: flex;
@@ -346,10 +346,9 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
 
 
 /* 
-  About page styling -------------------
+About page styling -------------------
 */
 .about-title {
-  
   background-image:  url('../img/about-background.jpg');
   background-position: center;
   background-size: cover;
@@ -380,7 +379,7 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
   flex-wrap: wrap;
   gap: 4rem;
   padding: 3rem;
- 
+  
 }
 
 .about-column {
@@ -409,7 +408,7 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
 
 
 /* 
-  COMBINED ELEMENTS -------------------
+COMBINED ELEMENTS -------------------
 */
 
 
@@ -423,19 +422,19 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
   border-radius: 1rem;
   max-width: 40rem;
   margin-bottom: 2rem;
-
+  
 }
 .checkout-cart-items{
   border-bottom:#DFDFDF solid 0.1rem; ;
   max-width: 28rem;
   margin:1rem;
   padding:0rem 0rem 1rem 0rem;
-
+  
 }
 .checkout-cart-items h3{
   margin-top: 0;
   margin-bottom: 1rem;
-
+  
 }
 
 
@@ -479,6 +478,20 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
 }
 
 /************ Payment Form -- Kimi *************/
+.checkout-layout {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 4rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  align-items: flex-start;
+}
+
+.cart-container {
+  flex: 2 1 400px;
+  max-width: 80rem;
+}
 .form-container {
   flex: 1 1 350px;
   max-width: 50rem;
@@ -641,36 +654,166 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
   margin-top: 2rem;
 }
 .city-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: flex-start; 
-    gap: 2rem; 
-    padding: 1rem;
-    border: 2px solid lightgray; 
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 2rem; 
+  padding: 1rem;
+  border: 2px solid lightgray; 
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 .city-name {
-    font-size: 2.5rem; 
-    font-weight: bold;
+  font-size: 2.5rem; 
+  font-weight: bold;
 }
 .header-date-selector {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid lightgray;
-    border-radius: 20px; 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgray;
+  border-radius: 20px; 
 }
 .header-date-selector .date-input-field {
-    border: none;
-    background: transparent;
-    outline: none;
+  border: none;
+  background: transparent;
+  outline: none;
 }
 
+/******** Product Deatil Page 1 - Vatican Museum **********/
+.vatican-hero {
+  background-image:  url('../img/Vatican-museum-hero.jpeg');
+  background-position: center;
+  background-size: cover;
+  /*parallax scrolling*/
+  background-attachment: fixed;
+  color: white;
+  padding: 0.5rem 2rem;
+  height:45rem;
+}
+.vatican-hero nav{
+  background-color: rgba(255, 255, 255, 0.6); 
+}
+.vatican-hero h1 {
+  font-size: 8rem; 
+  padding-top: 2rem;
+  margin: 0;
+}
+.product-detail-intro {
+  color:rgb(110, 76, 21);
+  font-size: 1.2rem;
+  min-width:25rem;
+  max-width: 50%;
+  margin-top: 2rem;
+  padding: 1rem 6rem;
+  background-color: rgba(246, 225, 191,0.8);
+  border-radius: 8px;
+}
+.art-section-1, .art-section-2 {
+  width: 100%;
+  min-height: 60vh; 
+  display: flex;
+  align-items: center;     
+  justify-content: center;   
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;             
+  text-align: center;
+}
+body.product-detail-page-body {
+  background-color: #1a1a1a; 
+  color: #f4f4f4;            
+  margin: 0;
+  padding: 0;
+}
+body.product-detail-page-body .section-title {
+  font-family: 'Times New Roman', serif; 
+  border-bottom: 2px solid var(--color-main-red);
+}
 
+/* Section 1: History & Location */
+.museum-history {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),url('../img/vatican-building.jpg');
+  background-position: center;
+  background-size: cover;
+  height:50rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10%;
+  align-items: flex-start;
+  gap: 4rem;
+}
 
+.history-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.map-box {
+  display: flex;
+  flex: 1;
+  max-width: 40rem;
+  align-items: center;
+  justify-content: center;
+}
+.map-box img {
+  width: 100%;      
+  height: auto;     
+  display: block;   
+  border-radius: 8px; 
+}
+/* Section 2: Areas Grid */
+.museum-areas {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.center-title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.area-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.area-card {
+  flex: 1 1 300px;
+}
+
+.area-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 100px 100px 0 0; 
+
+/* Section 3: Collection Showcase */
+.museum-collection {
+  padding: 4rem 10%;
+}
+
+.artist-showcase {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.artwork-gallery {
+  display: flex;
+  gap: 1rem;
+}
+
+.artwork-gallery img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
 
 
 
