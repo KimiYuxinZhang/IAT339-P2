@@ -194,12 +194,44 @@ input:focus{
 }
 
 /*product listing styling*/
+.country-heading {
+  color:black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  background: none;
+  padding: 1rem 3rem;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.event-grid {
+  color:#767676;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 1rem 3rem 3rem 3rem;
+ 
+}
+
+.event-column {
+  flex: 1 1 15rem; 
+}
+
+.banner-img {
+  width: 100vw;
+  height:15rem;
+}
+
+
+
+
 .destination-grid {
   display: flex; 
   flex-direction: row ;
   justify-content: flex-start; 
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0.5rem 3rem;
   gap: 1rem;
   
 }
@@ -378,8 +410,14 @@ About page styling -------------------
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
+<<<<<<< HEAD
   padding: 3rem;
   
+=======
+  padding: 3rem 5rem 3rem 5rem;
+
+ 
+>>>>>>> origin/CombineWork
 }
 
 .about-column {
