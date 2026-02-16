@@ -410,14 +410,9 @@ About page styling -------------------
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-<<<<<<< HEAD
-  padding: 3rem;
-  
-=======
+
   padding: 3rem 5rem 3rem 5rem;
 
- 
->>>>>>> origin/CombineWork
 }
 
 .about-column {
