@@ -729,11 +729,33 @@ COMBINED ELEMENTS -------------------
 .vatican-hero nav{
   background-color: white; 
 }
+
+
 .vatican-hero h1 {
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 8rem; 
-  padding-top: 2rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 6rem; 
+  padding: 2rem;
   margin: 0;
+  
+  color: transparent; 
+  -webkit-text-stroke: 0.2rem white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  
+}
+.vatican-hero h2{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+
+}
+.product-detail-page-text-red{
+  font-size: 3rem;
+  color: white; 
+  -webkit-text-stroke: 0rem;
+  
+  
+  
+
 }
 .product-detail-intro {
   color:rgb(110, 76, 21);
@@ -741,7 +763,7 @@ COMBINED ELEMENTS -------------------
   min-width:25rem;
   max-width: 50%;
   margin-top: 2rem;
-  padding: 1rem 6rem;
+  padding: 1rem 2rem;
   background-color: white;
   border-radius: 8px;
 }
