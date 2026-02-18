@@ -32,11 +32,10 @@ body {
 }
 
 h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 4rem; 
   padding-top: 2rem;
   margin: 0;
-  
-  
 }
 
 h2 {
@@ -51,10 +50,12 @@ h3 {
   margin-bottom: 3rem;
   background: #767676;
   padding: 0.5rem;
-  
-  
 }
-
+h3.no-bg-color{
+  background-color: transparent;
+  padding:0;
+  margin:0;
+}
 h4 {
   border-left: 0.5rem solid #FF5722; 
   margin-top: 1rem;
@@ -512,6 +513,7 @@ COMBINED ELEMENTS -------------------
 
 /************ Payment Form -- Kimi *************/
 .checkout-layout {
+  background-color: whitesmoke;
   display: flex;
   flex-wrap: wrap; 
   gap: 4rem;
@@ -520,7 +522,6 @@ COMBINED ELEMENTS -------------------
   padding: 0 2rem;
   align-items: flex-start;
 }
-
 .cart-container {
   flex: 2 1 400px;
   max-width: 80rem;
@@ -610,6 +611,7 @@ COMBINED ELEMENTS -------------------
 .button-action {
   font-family: 'body-font', Helvetica, sans-serif;
   font-weight: bold;
+  font-size: 1rem;
   margin-top:2rem;
   padding: 1rem 4rem;
   color: white;
@@ -716,7 +718,7 @@ COMBINED ELEMENTS -------------------
 }
 
 /******** Product Deatil Page 1 - Vatican Museum **********/
-.vatican-hero {
+.product-detail-hero {
   background-image:  url('../img/Vatican-museum-hero.jpeg');
   background-position: center;
   background-size: cover;
@@ -726,13 +728,10 @@ COMBINED ELEMENTS -------------------
   padding: 0.5rem 2rem;
   height:45rem;
 }
-.vatican-hero nav{
+.product-detail-hero nav{
   background-color: white; 
 }
-
-
-.vatican-hero h1 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.product-detail-hero h1 {
   font-size: 6rem; 
   padding: 2rem;
   margin: 0;
@@ -743,7 +742,7 @@ COMBINED ELEMENTS -------------------
   border-radius: 10px;
   
 }
-.vatican-hero h2{
+.product-detail-hero h2{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
 
@@ -752,10 +751,6 @@ COMBINED ELEMENTS -------------------
   font-size: 3rem;
   color: white; 
   -webkit-text-stroke: 0rem;
-  
-  
-  
-
 }
 .product-detail-intro {
   color:rgb(110, 76, 21);
@@ -875,7 +870,7 @@ body.product-detail-page-body .section-title {
   text-align: center;
 }
 
-/* Artwork Gallery and Image Shapes */
+/* Artwork Gallery */
 .artwork-gallery {
   display: flex;
   gap: 2rem;
@@ -897,10 +892,46 @@ figcaption{
   font-size: 0.9rem;
   text-align: center;
 }
-
-
-
-
-
+/******** Product Deatil Page 2 - Arc de Triomphe **********/
+body.arc .product-detail-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), 
+                      url('../img/arc-hero.jpg');
+}
+/******** CONTACT PAGE   **********/
+body.contact-page-body {
+  color: #303030;            
+  margin: 0;
+  padding: 0;
+}
+.contact-hero {
+  background-image:  url('../img/contact-hero.jpg');
+  background-position: center;
+  background-size: cover;
+  /*parallax scrolling*/
+  background-attachment: fixed;
+  color: white;
+  padding: 0.5rem 2rem;
+  height:45rem;
+}
+.contact-hero nav{
+  background-color: white; 
+}
+.checkout-layout .section-title{
+  color:#303030;
+  font-size: 1.7rem;
+  border-bottom: 2px solid var(--color-main-red);
+}
+.cart-container p{
+  margin-bottom: 3rem;
+}
+.checkout-layout .section-title.main-header {
+    flex: 0 0 100%;    
+    margin-top: 3rem; 
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--color-main-red);
+}
+.cart-container, .form-container {
+    margin-top: 0; 
+}
 
 
