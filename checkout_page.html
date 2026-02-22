@@ -1,190 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Kimi -->
 <head>
-
+  
   <meta charset="utf-8">
   <title>P01 - Checkout page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1 ">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+  
 </head>
 <body>
-
-<nav>
+  <!--Nav Bar-->
+  <nav>
     <ul>
       <li><a href="index.html">Home - Style Guide</a></li>
       <li><a href="listing_page.html">Product Listing</a></li>
-      <li><a href="checkout_page.html" >Checkout Page</a> </li>
       <li><a href="about_page.html">About us</a></li>
-      
+      <li><a href="contact_page.html">Contact</a></li>
+      <li><a href="checkout_page.html" class="bag-link">
+        <span class="material-symbols-outlined">shopping_bag</span>
+      </a></li>
     </ul>
   </nav>
   
-  <section class="checkout-cart">
-    <div class="checkout-cart-title">
-        <h1> Your Itinerary</h1>
-        <h2></h2>
-    </div>
-        
-    <!-- day 1-->
-    <div class="checkout-cart-days">
-        <div class="checkout-cart-items">
-            <div>
-                <h3>Day 1 : April 15, Vatican City & Rome</h3>
-            </div>
-
-            <div>
-                <h4>10AM - 1PM</h4>
-                <p class="checkout-cart-items-discription"> Vatican Museum, Sistine Chapel, Saint Peter's Basilica </p>
-                <div class="checkout-cart-img">
-                    <img src="img/vatican-saint_peters_basilica.png" alt="Vatican Museum">  
-                </div>
-                <div class="checkout-cart-img">
-                    <img src="img/vatican_museum.png" alt="Vatican Museum">  
-                </div>
-            </div>
+  <!--Cart section-->
+  <div class="checkout-layout">
+    <section class="cart-container">
+      <h1>Your Itinerary</h1>
+      <h2>2 destination</h2>
+      <h3></h3>
+      <div class="cart-header">
+        <span class="header-product">Destination</span>
+        <span class="header-attr">Group Size</span>
+        <span class="header-attr">Days</span>
+        <span class="header-attr">Total Price</span>
+      </div>
+      
+      <div class="city-header">
+        <span class="city-name">Rome</span>
+        <div class="header-date-selector">
+          <label class="primary-label" for="rome-start-date">Start Date</label>
+          <input class="date-input-field" type="date" id="rome-start-date">
         </div>
-        
-        <div class="checkout-cart-items">
-            <div>
-                <h4>1:30PM - 3PM</h4>
-                <p class="checkout-cart-items-discription"> Eat at "Poldo e Gianna Osteria" </p>
-                <p>Vicolo Rosini, 6, 00186 Roma RM, Italy</p>
-                <div class="checkout-cart-img">
-                    <img src="img/food-italy-carbonara.png" alt="pasta image">  
-                </div>
-            </div>
-        </div>
-
-        <div class="checkout-cart-items">
-            <div>
-                <h4>4:00PM - 7:00PM</h4>
-                <p class="checkout-cart-items-discription"> Colosseum </p>
-                <div class="checkout-cart-img">
-                    <img src="img/italy-colosseum.png" alt="colosseum">  
-                </div>
-            </div>
-        </div>
-        <div class="checkout-cart-items">
-            <div>
-                <h4>7:00PM- The next day</h4>
-                <p class="checkout-cart-items-discription"> Rest at Hotel</p>
-            </div>
-        </div>
-    </div>
-
-        <!-- day 2 -->
-        <div class="checkout-cart-days">
-        <div class="checkout-cart-items">
-            <div>
-                <h3>Day 2 : April 16, Rome to Milan</h3>
-            </div>
-
-            <div>
-                <h4>11AM - 2PM</h4>
-                <p class="checkout-cart-items-discription"> Train to Milan</p>
-                
-            </div>
-        </div>
-        
-        <div class="checkout-cart-items">
-            <div>
-                <h4>3PM - 6PM</h4>
-                <p class="checkout-cart-items-discription"> Duomo di Milano </p>
-                <div class="checkout-cart-img">
-                    <img src="img/duomo_de_milano.png" alt="duomo_de_milano">  
-                </div>
-            </div>
-        </div>
-
-        <div class="checkout-cart-items">
-            <div>
-                <h4>7:00PM - 9:00PM</h4>
-                <p class="checkout-cart-items-discription"> Eat at "Camera Nazionale Della Cucina Italiana" </p>
-                <p>Via Torino, 2, 20123 Milano MI, Italy</p>
-                <div class="checkout-cart-img">
-                    <img src="img/food-spain-paella.png" alt="food-spain-paella">  
-                </div>
-            </div>
-        </div>
-        <div class="checkout-cart-items">
-            <div>
-                <h4>9:00PM- The next day</h4>
-                <p class="checkout-cart-items-discription"> Rest at Hotel</p>
-            </div>
-        </div>
-    </div>
-
-        <div class="checkout-price-breakdown">
-            <h4>Total</h4>
-            <ul>
-              <li>Train: €50</li>
-              <li>Musume Ticket: €75</li>
-              <li>Meals & Transfers: €300</li>
-              <li>Hotel Stay: €850</li>
-            </ul>
-            <p class="checkout-price-total">Total Day 2: <strong>€1,275.00</strong></p>
-           
-
-            <!-- payment section-->
-            <form class="payment-container" action="#" method="POST">
-                <div class="box1">
-        
-                  <div class="box1-payment-lable">
-                    <input type="radio" id="creditcard" name="card_type" value="creditcard">
-                    <label for="creditcard">Credit Card</label>
-                  </div>
-        
-                  <div class="box1-card-icons">
-                    <img src="img/visa.png" alt="#">
-                    <img src="img/mastercard.png" alt="#">
-                    <img src="img/amex.png" alt="#">
-                    <img src="img/unionpay.png" alt="#">
-                  </div>
-                </div>
-        
-                <div class="box1">
-                  <div class="box1-payment-lable">
-                    <input type="radio" id="paypal" name="card_type" value="paypal">
-                    <label for="paypal">PayPal</label>
-                  </div>
-        
-                  <div class="box1-card-icons">
-                    <img src="img/paypal.png" alt="#">
-                  </div>
-                </div>
-        
-                <div class="box1">
-                  <div class="payment-card_details">
-                    <div class="payment-card_details-number_name">
-                      <label for="card_number">Card number</label>
-                      <input type="text" id="card_number" name="card_number" placeholder="xxxx xxxx xxxx" required>
-                      <label for="card_holder_name">Name on Card</label>
-                      <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Name on card" required>
-                    </div>
-        
-                    <div class="payment-card_details-number_name">
-                      <label for="card_expiry_date">Expiry date</label>
-                      <input type="text" id="card_expiry_date" name="card_expiry_date" placeholder="MM/YY" required>
-        
-                      <label for="card_cvv">CVV</label>
-                      <input type="text" id="card_cvv" name="card_cvv" placeholder="XXX" required>
-                      <input type="submit" value="Confirm and Pay">
-                    </div>
-                  </div>
-                </div>
-        
-        
-        
-              </form>
+      </div>
+      
+      <!--1st item-->
+      <div class="cart-item">
+        <div class="product-info">
+          <img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum">
+          <div class="product-details">
+            <h4 class="product-name">Vatican Museum</h4>
+            <input class="note-input" type="text" placeholder="Message to us:">
           </div>
-          <div>
-           
+        </div>
+        
+        <div class="cart-attribute">
+          <input type="number" value="1" min="1" class="qty-field">
+        </div>
+        
+        <div class="cart-attribute">
+          <input type="number" value="1" min="1" class="qty-field">
+        </div>
+        
+        <div class="cart-price">
+          <h5>$50.00</h5>
+        </div>
+      </div>
+      
+      <!--2nd item-->
+      <div class="cart-item">
+        <div class="product-info">
+          <img class="small-thumbnail" src="img/vatican-saint_peters_basilica.png" alt="vatican-saint_peters_basilica">
+          <div class="product-details">
+            <h4 class="product-name">Vatican Saint Peters Basilica</h4>
+            <input class="note-input" type="text" placeholder="Message to us:">
           </div>
+        </div>
+        <div class="cart-attribute">
+          <input type="number" value="1" min="1" class="qty-field">
+        </div>
+        <div class="cart-attribute">
+          <input type="number" value="1" min="1" class="qty-field">
+        </div>
+        <div class="cart-price">
+          <h5>$50.00</h5>
+        </div>
+      </div>
+      
+      <div class="cart-footer">
+        <h2>Total: $100.00</h2>
+      </div>
+    </section>
+    
+    
+    
+    <!-- payment section-->
+    <section class="form-container">
+      <h1>Check Out</h1>
+      <form class="input-form" method="post" action="#">
+        <fieldset class="form-section">
+          <legend>Customer Information</legend>
+          <div class="info-container">
+            <div class="form-group">
+              <label class="primary-label" for="first-name">Name</label>
+              <input class="text-input-field" type="text" id="first-name" placeholder="Last Name">
+              <input class="text-input-field" type="text" id="last-name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label class="primary-label" for="email">Email</label>
+              <input class="text-input-field" type="email" id="email" placeholder="mail@example.com">
+            </div>
+            <div class="form-group">
+              <label class="primary-label" for="phone-number">Phone Number</label>
+              <input class="text-input-field" type="tel" id="phone-number">
+            </div>
+          </div>
+        </fieldset>
+        
+        <fieldset class="form-section">
+          <legend>Payment Details</legend>
+          <div class="payment-methods">
+            <label class="method-card">
+              <input type="radio" name="pay-method" value="card" checked>
+              <span class="card-content">Credit Card
+                <span class="box1-card-icons">
+                  <img src="img/visa.png" alt="#">
+                  <img src="img/mastercard.png" alt="#">
+                  <img src="img/amex.png" alt="#">
+                  <img src="img/unionpay.png" alt="#">
+                </span>
+              </span>
+            </label>
+            <label class="method-card">
+              <input type="radio" name="pay-method" value="paypal">
+              <span class="card-content">PayPal
+                <span class="box1-card-icons">
+                  <img src="img/paypal.png" alt="#">
+                </span>
+              </span>
+            </label>
+          </div>
+          
+          <div class="info-container">
+            <div class="form-group">
+              <label class="primary-label" for="card-number">Card Number</label>
+              <input class="text-input-field" type="text" id="card-number" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="form-group">
+              <label class="primary-label" for="cvc-number">CVV</label>
+              <input class="text-input-field" type="text" id="cvc-number" placeholder="000">
+            </div>
+            <div class="form-group">
+              <label class="primary-label" for="expire-date">Exp. Date</label>
+              <input class="text-input-field" type="text" id="expire-date" placeholder="MM/YY">
+            </div>
+          </div>
+        </fieldset>
+        
+        <div class="form-footer">
+          <h2>Total Payment: $30.00</h2>
+          <button type="submit" class="button-action">Submit Order</button>
+        </div>
+      </form>
+    </section>
+  </div>
   
-  </section>
   
 </body>
 </html>
