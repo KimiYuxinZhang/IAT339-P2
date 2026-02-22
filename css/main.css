@@ -380,6 +380,8 @@ reference link :https://www.w3schools.com/css/css_combinators.asp
 /* 
 About page styling -------------------
 */
+
+
 .about-title {
   background-image:  url('../img/about-background.jpg');
   background-position: center;
@@ -396,6 +398,51 @@ About page styling -------------------
   margin: 0;
 }
 
+/* About page company event-updates*/
+
+.event-section { 
+  padding: 1rem 2rem; 
+  position: relative; 
+} 
+.event-section h2 {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid #767676;
+  padding-bottom: 1rem;
+}
+.event-scroll { 
+  display: flex; 
+  gap: 1rem; 
+  overflow-x: auto; 
+  padding-bottom: 1rem; 
+}
+
+ .event-card { 
+  flex: 0 0 45%; 
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+  padding:1rem;
+  background-color: rgb(110, 216, 248) ;
+}
+.event-card p{
+  margin-top: 1rem;
+  color:white;
+}
+  
+.event-card img { 
+  width: 40rem; 
+  height: 20rem; 
+  object-fit:  contain;
+  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto; display: block;
+ } 
+  
+  
+
+
+ 
 .about-intro {
   color:white;
   font-size: 1.2rem;
@@ -737,6 +784,7 @@ COMBINED ELEMENTS -------------------
   padding: 2rem;
   margin: 0;
   
+  /*method learned from : https://css-tricks.com/adding-stroke-to-web-text/*/
   color: transparent; 
   -webkit-text-stroke: 0.2rem white;
   background-color: rgba(0, 0, 0, 0.7);
@@ -897,6 +945,13 @@ figcaption{
   font-size: 0.9rem;
   text-align: center;
 }
+
+
+
+
+
+
+
 
 
 
