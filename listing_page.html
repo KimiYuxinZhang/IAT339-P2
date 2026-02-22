@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Zilin -->
 <head>
-
-  <meta charset="utf-8">
-  <title>P01 - Product Listing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1 ">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-
+    
+    <meta charset="utf-8">
+    <title>P01 - Product Listing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    
 </head>
 
 <body>
@@ -16,13 +17,17 @@
         <ul>
             <li><a href="index.html">Home - Style Guide</a></li>
             <li><a href="listing_page.html">Product Listing</a></li>
-            <li><a href="checkout_page.html" >Checkout Page</a> </li>
             <li><a href="about_page.html">About us</a></li>
-          </ul>
-      </nav>
+            <li><a href="contact_page.html">Contact</a></li>
+            <li><a href="checkout_page.html" class="bag-link">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+            </a></li>
+        </ul>
+    </nav>
     
+    
+    <h3 class="country-heading">🇫🇷 France</h3>
     <section class="destination-grid">
-
         <!--Musée du Louvre -->
         <div class="popular_destination">
             <img src="img/lurve-2.png" alt="Musée du Louvre Official Website">
@@ -33,22 +38,7 @@
                 <p>Most traveler spend 2 - 3.5 hours here</p>
             </div>
             <div class="destination-action">
-                <a href="https://www.louvre.fr/" target="_blank">View Details</a>
-                <a class="add_button" href=" #">Add to Itinerary</a>
-            </div>
-        </div>
-        
-        <!--vatican_museum -->
-        <div class="popular_destination">
-            <img src="img/vatican-saint_peters_basilica.png" alt="Vatican Museum Official Website">
-            <h2>Vatican Museum</h2>
-            <div class="destination-info">
-                <p>Vatican City</p>
-                <p>Ticket price: €15 - €75</p>
-                <p>Most traveler spend 2.5 - 4 hours here</p>
-            </div>
-            <div class="destination-action">
-                <a href="https://www.museivaticani.va/content/museivaticani/en.html" target="_blank">View Details</a>
+                <a class="view_button" href="https://www.louvre.fr/" target="_blank">View Details</a>
                 <a class="add_button" href=" #">Add to Itinerary</a>
             </div>
         </div>
@@ -59,41 +49,11 @@
             <h2>Arc de Triomphe</h2>
             <div class="destination-info">
                 <p>Paris, France</p>
-                <p>Ticket price: Free (Access to the terrace €22)</p>
+                <p>Ticket price: Free </p>
                 <p>Most traveler spend 0.5 - 1 hours here</p>
             </div>
             <div class="destination-action">
-                <a href="https://www.paris-arc-de-triomphe.fr/en" target="_blank">View Details</a>
-                <a class="add_button" href=" #">Add to Itinerary</a>
-            </div>
-        </div>
-        
-        <!--kom_ombo_temple -->
-        <div class="popular_destination">
-            <img src="img/egypt-kom_ombo_temple.png" alt="Kom Ombo Temple">
-            <h2>Kom Ombo Temple</h2>
-            <div class="destination-info">
-                <p>Egypt</p>
-                <p>Ticket price: €6- €15</p>
-                <p>Most traveler spend 5 - 6 hours here</p>
-            </div>
-            <div class="destination-action">
-                <a href="https://egymonuments.gov.eg/monuments/kom-ombo-temple/" target="_blank">View Details</a>
-                <a class="add_button" href=" #">Add to Itinerary</a>
-            </div>
-        </div>
-        
-        <!--italy-colosseum-->
-        <div class="popular_destination">
-            <img src="img/italy-colosseum.png" alt="The Colosseum">
-            <h2>The Colosseum</h2>
-            <div class="destination-info">
-                <p>Rome, Italy</p>
-                <p>Ticket price: €22- €85</p>
-                <p>Most traveler spend 2 - 4 hours here</p>
-            </div>
-            <div class="destination-action">
-                <a href="#">View Details</a>
+                <a class="view_button" href="arc_page.html" target="_blank">View Details</a>
                 <a class="add_button" href=" #">Add to Itinerary</a>
             </div>
         </div>
@@ -108,7 +68,57 @@
                 <p>Most traveler spend 2 - 5 hours here</p>
             </div>
             <div class="destination-action">
-                <a href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" target="_blank"  >View Details</a>
+                <a class="view_button" href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" target="_blank"  >View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+            </div>
+        </div>
+        
+        <!--Eiffel Tower-->
+        <div class="popular_destination">
+            <img src="img/france-eiffel.png" alt="Eiffel Tower">
+            <h2>Eiffel Tower</h2>
+            <div class="destination-info">
+                <p>Paris, France</p>
+                <p>Ticket price: €25</p>
+                <p>Most traveler spend 1 - 2 hours here</p>
+            </div>
+            <div class="destination-action">
+                <a class="view_button" href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" target="_blank"  >View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+            </div>
+        </div>
+        
+        <!--D'Orsay Musume-->
+        <div class="popular_destination">
+            <img src="img/france-orsay.png" alt="D'Orsay Musume">
+            <h2>Musée d'Orsay</h2>
+            <div class="destination-info">
+                <p>Paris, France</p>
+                <p>Ticket price: €25</p>
+                <p>Most traveler spend 2 - 4 hours here</p>
+            </div>
+            <div class="destination-action">
+                <a class="view_button" href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" target="_blank"  >View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <h3 class="country-heading">🇮🇹 Italy</h3>
+    <section class="destination-grid">
+        <!--vatican_museum -->
+        <div class="popular_destination">
+            <img src="img/vatican-saint_peters_basilica.png" alt="Vatican Museum Official Website">
+            <h2>Vatican Museum</h2>
+            <div class="destination-info">
+                <p>Vatican City</p>
+                <p>Ticket price: €15 - €75</p>
+                <p>Most traveler spend 2.5 - 4 hours here</p>
+            </div>
+            <div class="destination-action">
+                <a class="view_button" href="vatican_museu_page.html" target="_blank">View Details</a>
                 <a class="add_button" href=" #">Add to Itinerary</a>
             </div>
         </div>
@@ -123,7 +133,22 @@
                 <p>Most traveler spend 1 - 3 hours here</p>
             </div>
             <div class="destination-action">
-                <a href="https://sagradafamilia.org/en/" target="_blank">View Details</a>
+                <a class="view_button" href="https://sagradafamilia.org/en/" target="_blank">View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+            </div>
+        </div>
+        
+        <!--italy-colosseum-->
+        <div class="popular_destination">
+            <img src="img/italy-colosseum.png" alt="The Colosseum">
+            <h2>The Colosseum</h2>
+            <div class="destination-info">
+                <p>Rome, Italy</p>
+                <p>Ticket price: €22- €85</p>
+                <p>Most traveler spend 2 - 4 hours here</p>
+            </div>
+            <div class="destination-action">
+                <a class="view_button" href="#">View Details</a>
                 <a class="add_button" href=" #">Add to Itinerary</a>
             </div>
         </div>
@@ -138,18 +163,50 @@
                 <p>Most traveler spend 2 - 3 hours here</p>
             </div>
             <div class="destination-action">
-                <a href="https://www.duomomilano.it/en/" target="_blank">View Details</a>
+                <a class="view_button" href="https://www.duomomilano.it/en/" target="_blank">View Details</a>
                 <a class="add_button" href=" #">Add to Itinerary</a>
             </div>
         </div>
         
-          
-
-
-      </section>
-   
-   
-
+    </section>   
+    
+    <h3 class="country-heading">🇪🇬 Egypt</h3>
+    <section class="destination-grid">
+        
+        
+        <!--kom_ombo_temple -->
+        <div class="popular_destination">
+            <img src="img/egypt-kom_ombo_temple.png" alt="Kom Ombo Temple">
+            <h2>Kom Ombo Temple</h2>
+            <div class="destination-info">
+                <p>Egypt</p>
+                <p>Ticket price: €6- €15</p>
+                <p>Most traveler spend 5 - 6 hours here</p>
+            </div>
+            <div class="destination-action">
+                <a class="view_button" href="https://egymonuments.gov.eg/monuments/kom-ombo-temple/" target="_blank">View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+            </div>
+        </div>
+        
+        <!--The Great Egyptian Museum -->
+        <div class="popular_destination">
+            <img src="img/egypt-museum.png" alt="The Great Egyptian Museum">
+            <h2>The Great Egyptian Museum</h2>
+            <div class="destination-info">
+                <p>Egypt</p>
+                <p>Ticket price: €30- €50</p>
+                <p>Most traveler spend 3 - 6 hours here</p>
+            </div>
+            <div class="destination-action">
+                <a class="view_button" href="https://egymonuments.gov.eg/monuments/kom-ombo-temple/" target="_blank">View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
 </body>
 
 </html>   

@@ -2,154 +2,154 @@
 <html lang="en">
 
 <head>
-
+  
   <meta charset="utf-8">
   <title>P01 - Style Guide Template</title>
-
+  
   <link href="css/main.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+  
+  
 </head>
 
 <body>
-
+  
   <header>
     <h1>P01 - Jan 19</h1>
-
+    
     <p>A template you can use to start building out your own style guides with.</p>
-
+    
     <!--Navigation section- Interactive elements: A navigation link-->
     <!-- plan your trip section- Interactive elements: A navigation link -->
+    <!--Zilin-->
     <nav>
       <ul>
-          <li><a href="index.html">Home - Style Guide</a></li>
-          <li><a href="listing_page.html">Product Listing</a></li>
-          <li><a href="checkout_page.html" >Checkout Page</a> </li>
-          <li><a href="about_page.html">About us</a></li>
-        </ul>
+        <li><a href="index.html">Home - Style Guide</a></li>
+        <li><a href="listing_page.html">Product Listing</a></li>
+        <li><a href="checkout_page.html" >Checkout Page</a> </li>
+        <li><a href="about_page.html">About us</a></li>
+        <li><a href="contact_page.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
-
-
-
+  
+  
+  
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <!-- intext link-->
+  <!--Zilin-->
   <section class="element" id="PopularDestination_page">
     <h2></h2>
     <h3>intext link</h3>
-
+    
     <h4> CSS Selector</h4>
-      <pre>
-        <code>
-          a 
+    <pre>
+      <code>
+        a 
       </code>
-      </pre>
-
+    </pre>
+    
     <h4>Sample code:</h4>
     <code>&lt;p&gt; Click &lt;a href = "https://www.louvre.fr/"&gt; Musée du Louvre Official Website &lt;/a&gt; for more information &lt;/p&gt;
     </code>
-
+    
     <h4>Rendered element:</h4>
-    <p> Click <a href="https://www.louvre.fr/">Musée du Louvre Official Website</a> for more information </p>
+    <p> Click <a href="https://www.louvre.fr/">Musée du Louvre Official Website<span class="material-symbols-outlined">arrow_outward</span></a> for more information </p>
   </section>
-
-
-
-
-
+  
+  
+  
+  
+  
   <!-- Default Button styling section -->
+  <!--Zilin-->
   <section class="element">
-
+    
     <h3>Navigation Link</h3>
-
+    
     <h4>CSS selector:</h4>
-    <p>.button-nav</p>
+    <p>.view_button<br>.add_button</p>
     <h4>Sample code:</h4>
-    <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
+    <code>&lt;a class="view_button" href="#" &gt;View Details&lt;/a&gt;</code>
+    
     <h4>Rendered element:</h4>
-    <a class="button-nav" href="#">Default Button</a>
-
+    <div class="popular_destination">
+      <div class="destination-action">
+        <a class="view_button" href="https://www.louvre.fr/" target="_blank">View Details</a>
+        <a class="add_button" href=" #">Add to Itinerary</a>
+      </div>
+    </div>
+    
   </section>
-
+  
   <!--A submit and reset button for forms-->
   <section class="element">
     <h3>Submit/Reset Buttons</h3>
     <h4> CSS Selector</h4>
-      <pre>
-        .button-nav 
-        
-        .button-nav:hover, .button-nav:focus 
-      </pre>
+    <p>.button-action</p>
     
-
+    
     <h4>Sample code:</h4>
-    <code>&lt;form action="#"&gt;&lt;input type="submit" value="Submit"&gt;&lt;input type="reset" value="Reset"&gt;&lt;/form&gt;</code>
-
+    <code>&lt;button type="submit" class="button-action"&gt;Sumbit&lt;button&gt;</code>
+    
     <h4>Rendered element:</h4>
-    <form action="#">
-      <input class=" button-nav" type="submit" value="Submit">
-      <input class=" button-nav" type="reset" value="Reset">
-    </form>
-
-
+    <button type="submit" class="button-action">Submit</button>
+    
+    
   </section>
-
+  
   <!--Text Input Field with Label-->
+  <!--Kimi-->
   <section class="element">
     <h3>Text Input Field with Label</h3>
-
+    
     <h4> CSS Selector</h4>
-      <pre>
-        
-      </pre>
-
+    <p>.input-form<br>.primary-label<br>.text-input-field<br>.date-input-field</p>
+    
     <h4>Sample code:</h4>
-
-    <!-- <pre> tag - preformatted text, preserves white space and line breaks. 
-          information from: https://www.w3schools.com/tags/tag_pre.asp-->
-    <pre>
-        <code>
-          &lt;form method="post" action="#" class="form-name"&gt;
-            &lt;label for="form-name"&gt;Name:&lt;/label&gt;
-            &lt;input type="text" id="form-name" placeholder="Jhon Watson"&gt;
-          &lt;/form&gt;
-        </code>
-        </pre>
-
+    <code>
+      &lt;form class="input-form" method="post" action="#"&gt;<br>
+      &lt;label class="primary-label" for="name"&gt;Enter:&lt;/label&gt;<br>
+      &lt;input class="text-input-field" type="text" id="name" placeholder="Something"&gt;
+    </code>
+    
     <h4>Rendered element:</h4>
-    <form method="post" action="#" class="form-name">
-      <label for="form-name"> Name:</label>
-      <input type="text" id="form-name" placeholder="Jhon Watson">
+    <form class="input-form" method="post" action="#">
+      <label class="primary-label" for="name">Username</label>
+      <input class="text-input-field" type="text" id="name" placeholder="Something">
+      <label class="primary-label" for="bd">Birthday</label>
+      <input class="date-input-field" type="date" id="bd">
     </form>
-
+    
   </section>
-
+  
   <!--A radio button input field and a label-->
+  <!--Zilin-->
   <section class="element">
     <h3>Radio Button with Label</h3>
     <h4> CSS Selector</h4>
-      <pre>
-        
-      </pre>
-
+    <pre>
+      
+    </pre>
+    
     <h4>Sample code:</h4>
     <pre><code>
-          &lt;form&gt;
-          &lt;input type="radio" id="days3" name="travel_days" value="3"&gt;
-          &lt;label for="3"&gt;3&lt;/label&gt;&lt;br&gt;
-          &lt;input type="radio" id="days5" name="travel_days" value="5"&gt;
-          &lt;label for="5"&gt;5&lt;/label&gt;&lt;br&gt;
-          &lt;input type="radio" id="days12" name="travel_days" value="12"&gt;
-          &lt;label for="12"&gt;12&lt;/label&gt;&lt;br&gt;
-          &lt;input type="radio" id="days14" name="travel_days" value="14"&gt;
-          &lt;label for="14"&gt;14&lt;/label&gt;&lt;br&gt;&lt;input type="radio" id="days18" name="travel_days" value="18"&gt;
-          &lt;label for="18"&gt;18&lt;/label&gt;&lt;br&gt;
-          &lt;/form&gt;</code>
-        </pre>
-
+      &lt;form&gt;
+      &lt;input type="radio" id="days3" name="travel_days" value="3"&gt;
+      &lt;label for="3"&gt;3&lt;/label&gt;&lt;br&gt;
+      &lt;input type="radio" id="days5" name="travel_days" value="5"&gt;
+      &lt;label for="5"&gt;5&lt;/label&gt;&lt;br&gt;
+      &lt;input type="radio" id="days12" name="travel_days" value="12"&gt;
+      &lt;label for="12"&gt;12&lt;/label&gt;&lt;br&gt;
+      &lt;input type="radio" id="days14" name="travel_days" value="14"&gt;
+      &lt;label for="14"&gt;14&lt;/label&gt;&lt;br&gt;&lt;input type="radio" id="days18" name="travel_days" value="18"&gt;
+      &lt;label for="18"&gt;18&lt;/label&gt;&lt;br&gt;
+      &lt;/form&gt;</code>
+    </pre>
+    
     <h4>Rendered element:</h4>
     <p>Choose how many days you wish to travel:</p>
-
+    
     <form>
       <input type="radio" id="days3" name="travel_days" value="3">
       <label for="days3">3</label><br>
@@ -163,782 +163,711 @@
       <label for="days18">18</label><br>
     </form>
   </section>
-
+  
   <!-- image as a link-->
+  <!--Zilin-->
   <section class="image-element">
     <h3>Image as a Link</h3>
-
+    
     <h4> CSS Selector</h4>
-      <pre>
-        
-      </pre>
-
+    <pre>
+      
+    </pre>
+    
     <h4>Sample code:</h4>
     <pre>
-          <code>
-            &lt;a href="https://www.louvre.fr/" target="_blank"&gt;
-            &lt;img src="img/image1.png" alt="Musée du Louvre Official Website" style="width:350px;height:200px;"&gt;
-            &lt;/a&gt;</code>
-          </pre>
-    <!-- Image from: https://www.louvre.fr/ -->
-
-    <h4>Rendered element:</h4>
-    <a href="https://www.louvre.fr/" target="_blank">
-      <img src="img/image1.png" alt="Musée du Louvre Official Website" style="width:280px; height:350px;">
-    </a>
-
-  </section>
-
-
-
-  <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-  <!-- TEXT ELEMENTS SECTION // -->
-  <section id="About_page">
-    <h2>Text Elements</h2>
-
-    <section class="element">
-
-      <!-- Four levels of heading-->
-      <h3>Four levels of heading</h3>
-      <h4> CSS Selector</h4>
-      <pre>
-       
+      <code>
+        &lt;a href="https://www.louvre.fr/" target="_blank"&gt;
+        &lt;img src="img/image1.png" alt="Musée du Louvre Official Website" style="width:350px;height:200px;"&gt;
+        &lt;/a&gt;</code>
       </pre>
+      <!-- Image from: https://www.louvre.fr/ -->
       
-      <h4>Sample code:</h4>
-      <pre>
-          <code>
-          &lt;h1&gt;The Louvre&lt;/h1&gt;
-          &lt;h2&gt;The Louvre&lt;/h2&gt;
-          &lt;h3&gt;The Louvre&lt;/h3&gt;
-          &lt;h4&gt;The Louvre&lt;/h4&gt;</code>
-          </pre>
-
       <h4>Rendered element:</h4>
-      <h1>The Louvre</h1>
-      <h2>The Louvre</h2>
-      <h3>The Louvre</h3>
-      <h4>The Louvre</h4>
+      <a href="https://www.louvre.fr/" target="_blank">
+        <img src="img/image1.png" alt="Musée du Louvre Official Website" style="width:280px; height:350px;">
+      </a>
+      
     </section>
-
-    <section class="element">
-      <!-- A paragraph-->
-      <h3>Paragraphs</h3>
-      <h4>Sample code</h4>
-      <code>
-          &lt;p&gt;Housed in Eugène Delacroix's former apartment, the Musée National Eugène-Delacroix is dedicated to the painter's memory. It was created on the initiative of some of the greatest artists of the 1920s - such as Maurice Denis, Paul Signac, Édouard Vuillard and Ker-Xavier Roussel - and is a testament to their admiration for Delacroix and his work&lt;/p&gt;
-        </code>
-
-      <h4>Rendered element:</h4>
-      <p>Housed in Eugène Delacroix's former apartment, the Musée National Eugène-Delacroix is dedicated to the
-        painter's memory. It was created on the initiative of some of the greatest artists of the 1920s - such as
-        Maurice Denis, Paul Signac, Édouard Vuillard and Ker-Xavier Roussel - and is a testament to their admiration for
-        Delacroix and his work</p>
-    </section>
-
-    <!-- Numbered lists -->
-
-    <section class="element">
-      <h3>Numbered Lists</h3>
-
-      <h4> CSS Selector</h4>
-      <pre>
+    
+    
+    
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+    
+    
+    
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="About_page">
+      <h2>Text Elements</h2>
+      
+      <section class="element">
         
-      </pre>
-
-      <h4>Sample code</h4>
-      <code>
-          &lt;ol type="1"&gt; &lt;li&gt;The Louvre&lt;/li&gt; &lt;li&gt;Duomo de Milano&lt;/li&gt; &lt;li&gt;Saint Peter's Basilica&lt;/li&gt; &lt;/ol&gt;
-        </code>
-
-      <h4>Rendered element:</h4>
-
-      <ol type="1">
-        <li>The Louvre</li>
-        <li>Duomo de Milano</li>
-        <li>Saint Peter's Basilica</li>
-      </ol>
-    </section>
-
-  </section>
-  <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-  <!-- COMBINED ELEMENTS SECTION // -->
-  <section id="combined_elements">
-    <h2>Combined Elements</h2>
-    <section class="element">
-      <h3>Main Navigation</h3>
-
-      <h4> CSS Selector</h4>
-      <pre>
-        nav 
-
-        nav ul 
-        
-        nav a:hover, 
-        nav a:focus 
-      </pre>
-
-
-      <h4>Sample code:</h4>
-      <pre><code>
-         &lt;nav&gt;
-         &lt;ul&gt; 
-         &lt;li&gt;&lt; a href="#PlanYourTrip_page.html" target="_blank"&gt;Plan your Trip&lt;/a&gt;"&lt;/li&gt; &lt;li&gt;"
-         &lt;a href="#PopularDestination_page.html" target="_blank"&gt;popular destination&lt;/a&gt;&lt;/li&gt; 
-         &lt;li&gt;&lt;a href="#PastTravelersItennery_page.html" target="_blank"&gt;
-         Past travelers' Itennery&lt;/a&gt;"&lt;/li&gt; &lt;li&gt;"&lt;a href="WhoAreWe.html" target="_blank"&gt;Who are we&lt;/a&gt;
-         &lt;/li&gt; &lt;li&gt;&lt;a href="OurPartner.html" target="_blank"&gt;Our partner&lt;/a&gt;&lt;/li&gt;
-         &lt;/nav&gt;
-        </code>
-      </pre>
-
-      <h4>Rendered element:</h4>
-      <nav>
-        <ul>
-          <li> <a href="listing_page.html" target="_blank">Plan your Trip</a></li>
-          <li> <a href="#PopularDestination_page.html" target="_blank">popular destination</a></li> 
-          <li> <a href="#PastTravelersItennery_page.html" target="_blank">Past travelers' Itennery</a></li>
-          <li> <a href="about.html" target="_blank">About us</a> </li>
-          <li> <a href="feedback.html" target="_blank">Give Feedback</a> </li>
-        </ul>
-      </nav>
-
-    </section>
-
-    <section class="element">
-      <!--A product/service listing -->
-      <h3>Product/Service Listing</h3>
-      <h4> CSS Selector</h4>
-      <pre>
-        <code>
-        .destination-grid 
-        .popular_destination 
-        .popular_destination img 
-        .popular_destination h2 
-        .popular_destination a 
-        .popular_destination a:hover,
-        .popular_destination a:focus 
-      </code>
-      </pre>
-
-      <h4>Sample code</h4>
-
-
-      <pre>
-          <code>
-            &lt;div class="popular_destination"&gt;
-            &lt;img src="img/lurve-2.png" alt="Musée du Louvre Official Website" "&gt;
-            &lt;h2&gt;The Lurve&lt;/h2&gt;
-            &lt;p&gt;Paris, France&lt;/p&gt;
-            &lt;p&gt;Ticket price: €15- €45&lt;/p&gt;
-            &lt;p&gt;Most traveler spend 2 - 3.5 hours here&lt;/p&gt;
-            
-            &lt;a href=" [https://www.louvre.fr/](https://www.louvre.fr/)"&gt;View Details&lt;/a&gt;
-          &lt;/div&gt;
-
-          &lt;div class="popular_destination"&gt;
-            &lt;img src="img/vatican_museum.png" alt="vatican museum Official Website" "&gt;
-            &lt;h2&gt;Vatican Museum&lt;/h2&gt;
-            &lt;p&gt;Vatican City&lt;/p&gt;
-            &lt;p&gt;Ticket price: €15- €75&lt;/p&gt;
-            &lt;p&gt;Most traveler spend 2.5 - 4 hours here&lt;/p&gt;
-            &lt;a href=" [https://www.museivaticani.va/content/museivaticani/en.html](https://www.museivaticani.va/content/museivaticani/en.html)"&gt;View Details&lt;/a&gt;
-          &lt;/div&gt;
-          &lt;div class="popular_destination"&gt;
-            &lt;img src="img/egypt-kom_ombo_temple.png" alt="egypt-kom_ombo_temple" "&gt;
-            &lt;h2&gt;Kom Ombo Temple&lt;/h2&gt;
-            &lt;p&gt;Egypt&lt;/p&gt;
-            &lt;p&gt;Ticket price: €6- €25&lt;/p&gt;
-            &lt;p&gt;Most traveler spend 5 - 6 hours here&lt;/p&gt;
-            &lt;a href=" [https://www.museivaticani.va/content/museivaticani/en.html](https://www.museivaticani.va/content/museivaticani/en.html)"&gt;View Details&lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/section&gt;
-          </code>
-        </pre>
-
-
-      <h4>Rendered Elements:</h4>
-      <section class="destination-grid">
-
-        <div class="popular_destination">
-          <img src="img/lurve-2.png" alt="Musée du Louvre Official Website" >
-          <h2>The Louvre</h2>
-          <p>Paris, France</p>
-          <p>Ticket price: €15- €45</p>
-          <p>Most traveler spend 2 - 3.5 hours here</p>
+        <!-- Four levels of heading-->
+        <h3>Four levels of heading</h3>
+        <h4> CSS Selector</h4>
+        <pre>
           
-          <a href=" https://www.louvre.fr/">View Details</a>
-          <a href=" #">Add to Itinerary</a>
-        </div>
-
-        <div class="popular_destination">
-          <img src="img/vatican_museum.png" alt="vatican museum Official Website" >
-          <h2>Vatican Museum</h2>
-          <p>Vatican City</p>
-          <p>Ticket price: €15- €75</p>
-          <p>Most traveler spend 2.5 - 4 hours here</p>
-          <a href=" https://www.museivaticani.va/content/museivaticani/en.html">View Details</a>
-        </div>
-        <div class="popular_destination">
-          <img src="img/egypt-kom_ombo_temple.png" alt="egypt-kom_ombo_temple" >
-          <h2>Kom Ombo Temple</h2>
-          <p>Egypt</p>
-          <p>Ticket price: €6- €25</p>
-          <p>Most traveler spend 5 - 6 hours here</p>
-          <a href=" https://www.museivaticani.va/content/museivaticani/en.html">View Details</a>
-        </div>
-      </section>
-    </section>
-
-    <!--A payment form-->
-    <section class="element">
-      <h3>Payment Form with design</h3>
-
-      <h4> CSS Selector</h4>
-      <pre>
-        <code>
-          .payment-container &gt;div
-          .box1
-          .box1-payment-lable 
-          .box1-card-icons 
-          .box1-card-icons img
-      </code>
-      </pre>
-
-
-      <h4>Sample code</h4>
-      <pre>
-          <code>
-              &lt;div class="box1-payment-lable"&gt;
-                &lt;input type="radio" id="creditcard" name="card_type" value="creditcard"&gt;
-                &lt;label for="creditcard"&gt;Credit Card&lt;/label&gt;
-              &lt;/div&gt;
-
-              &lt;div class="box1-card-icons"&gt;
-                &lt;img src="img/visa.png" alt="#"&gt;
-                &lt;img src="img/mastercard.png" alt="#"&gt;
-                &lt;img src="img/amex.png" alt="#"&gt;
-                &lt;img src="img/unionpay.png" alt="#"&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="box1"&gt;
-              &lt;div class="box1-payment-lable"&gt;
-                &lt;input type="radio" id="paypal" name="card_type" value="paypal"&gt;
-                &lt;label for="paypal"&gt;PayPal&lt;/label&gt;
-              &lt;/div&gt;
-
-              &lt;div class="box1-card-icons"&gt;
-                &lt;img src="img/paypal.png" alt="#"&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="box1"&gt;
-              &lt;div class="payment-card_details"&gt;
-                &lt;div class="payment-card_details-number_name"&gt;
-                  &lt;label for="card_number"&gt;Card number&lt;/label&gt;
-                  &lt;input type="text" id="card_number" name="card_number" placeholder="xxxx xxxx xxxx" required&gt;
-                  &lt;label for="card_holder_name"&gt;Name on Card&lt;/label&gt;
-                  &lt;input type="text" id="card_holder_name" name="card_holder_name" placeholder="Name on card" required&gt;
-                &lt;/div&gt;
-
-                &lt;div class="payment-card_details-number_name"&gt;
-                  &lt;label for="card_expiry_date"&gt;Expiry date&lt;/label&gt;
-                  &lt;input type="text" id="card_expiry_date" name="card_expiry_date" placeholder="MM/YY" required&gt;
-
-                  &lt;label for="card_cvv"&gt;CVV&lt;/label&gt;
-                  &lt;input type="text" id="card_cvv" name="card_cvv" placeholder="XXX" required&gt;
-                  &lt;input type="submit" value="Confirm and Pay"&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          </code>
         </pre>
-
-
-
-      <h4>Rendered items:</h4>
-
-      <form class="payment-container" action="#" method="POST">
-        <div class="box1">
-
-          <div class="box1-payment-lable">
-            <input type="radio" id="creditcard" name="card_type" value="creditcard">
-            <label for="creditcard">Credit Card</label>
-          </div>
-
-          <div class="box1-card-icons">
-            <img src="img/visa.png" alt="#">
-            <img src="img/mastercard.png" alt="#">
-            <img src="img/amex.png" alt="#">
-            <img src="img/unionpay.png" alt="#">
-          </div>
-        </div>
-
-        <div class="box1">
-          <div class="box1-payment-lable">
-            <input type="radio" id="paypal" name="card_type" value="paypal">
-            <label for="paypal">PayPal</label>
-          </div>
-
-          <div class="box1-card-icons">
-            <img src="img/paypal.png" alt="#">
-          </div>
-        </div>
-
-        <div class="box1">
-          <div class="payment-card_details">
-            <div class="payment-card_details-number_name">
-              <label for="card_number">Card number</label>
-              <input type="text" id="card_number" name="card_number" placeholder="xxxx xxxx xxxx" required>
-              <label for="card_holder_name">Name on Card</label>
-              <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Name on card" required>
-            </div>
-
-            <div class="payment-card_details-number_name">
-              <label for="card_expiry_date">Expiry date</label>
-              <input type="text" id="card_expiry_date" name="card_expiry_date" placeholder="MM/YY" required>
-
-              <label for="card_cvv">CVV</label>
-              <input type="text" id="card_cvv" name="card_cvv" placeholder="XXX" required>
-              <input type="submit" value="Confirm and Pay">
-            </div>
-          </div>
-        </div>
-
-
-
-      </form>
-
-
-    </section>
-
-<!-- 
-    <section class="element">
-
-      <h3>Payment Form (old) </h3>
-      <h4>Sample code</h4>
-
-      <pre>
-          <code>
-          &lt;form&gt;
-            &lt;label for="card_holder_name"&gt;Name on Card&lt;/label&gt;
-            &lt;input type="text" id="card_holder_name" name="card_holder_name" required&gt;
-
-            &lt;label for="card_expiry_date"&gt;Expiry date&lt;/label&gt;
-            &lt;input type="text" id="card_expiry_date" name="card_expiry_date" required&gt;
-
-            &lt;label for="card_cvv"&gt;CVV&lt;/label&gt;
-            &lt;input type="text" id="card_cvv" name="card_cvv" required&gt;
-      
-            &lt;p&gt;Payment Method:&lt;/p&gt;
-            &lt;input type="radio" id="visa" name="card_type" value="visa"&gt;
-            &lt;label for="visa"&gt;Visa&lt;/label&gt;
-            &lt;input type="radio" id="mastercard" name="card_type" value="mastercard"&gt;
-            &lt;label for="mastercard"&gt;Mastercard&lt;/label&gt;
-            &lt;input type="radio" id="ameircanExpress" name="card_type" value="ameircanExpress"&gt;
-            &lt;label for="ameircanExpress"&gt;Ameircan Express&lt;/label&gt;
-            &lt;input type="radio" id="paypal" name="card_type" value="paypal"&gt;
-            &lt;label for="paypal"&gt;Paypal &lt;/label&gt;
-            &lt;input type="radio" id="crypto" name="card_type" value="crypto"&gt;
-            &lt;label for="crypto"&gt;Cryptocurrency &lt;/label&gt;
-      
-            &lt;input type="submit" value="Confirm and Pay"&gt;
-          &lt;/form&gt;
-          </code>
-        </pre>
-
-      <h4>Rendered items:</h4>
-      <form action="#" method="POST">
-        <p>You are almost there! Just a few steps to secure your spot</p>
-
-        <p>Payment Method:</p>
-
-        <div class="payment-options">
-          <input type="radio" id="visa" name="card_type" value="visa">
-          <label for="visa">Visa</label>
-          <input type="radio" id="mastercard" name="card_type" value="mastercard">
-          <label for="mastercard">Mastercard</label>
-          <input type="radio" id="ameircanExpress" name="card_type" value="ameircanExpress">
-          <label for="ameircanExpress">Ameircan Express</label>
-          <input type="radio" id="paypal" name="card_type" value="paypal">
-          <label for="paypal">Paypal </label>
-          <input type="radio" id="crypto" name="card_type" value="crypto">
-          <label for="crypto">Cryptocurrency </label>
-        </div>
-
-        <div class="payment-card_details">
-          <div class="payment-card_details-number_name">
-            <label for="card_number">Card number</label>
-            <input type="text" id="card_number" name="card_number" placeholder="XXX" required>
-            <label for="card_holder_name">Name on Card</label>
-            <input type="text" id="card_holder_name" name="card_holder_name" required>
-          </div>
-
-          <div class="payment-card_details-number_name">
-            <label for="card_expiry_date">Expiry date</label>
-            <input type="text" id="card_expiry_date" name="card_expiry_date" required>
-
-            <label for="card_cvv">CVV</label>
-            <input type="text" id="card_cvv" name="card_cvv" required>
-          </div>
-        </div>
-        <div class="payment-submission">
-          <input type="submit" value="Confirm and Pay">
-        </div>
-      </form>
-    </section>
-    -->
-
-    <section class="element">
-      <!--A 'checkout cart' with at least two items-->
-      <h3>Checkout Cart</h3>
-
-      <h4> CSS Selector</h4>
-      <pre>
         
-      </pre>
-
-
-      <h4>Sample code</h4>
-      <pre>
+        <h4>Sample code:</h4>
+        <pre>
           <code>
-            &lt;p&gt;Packege: The 5 day relaxed trip crafted by you!&lt;/p&gt;
-          &lt;img src="img/vatican_museum.png" alt="vatican museum Official Website" style="width:200px; height:125px;"&gt;
-          &lt;p&gt;Vatican Museum&lt;/p&gt;
-          &lt;p&gt;day 1-3&lt;/p&gt;
-          &lt;img src="img/lurve-2.png" alt="Musée du Louvre Official Website" style="width:200px; height:125px;"&gt;
-          &lt;p&gt;The Lurve &lt;/p&gt;
-          &lt;p&gt;day 3-5&lt;/p&gt;
-          &lt;p&gt;Days total &lt;strong&gt; 5&lt;/strong&gt; &lt;/p&gt;
-          &lt;ul&gt;
-          &lt;li&gt;&lt;strong&gt;The Louvre Ticket:&lt;/strong&gt; 1 x €45.00 = €45.00&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Vatican Museum Ticket:&lt;/strong&gt; 1 x €75.00 = €75.00&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Train (Vatican to Paris, day 3):&lt;/strong&gt; 1 x €200.00 = €200.00&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;5-Star Hotel (4 Nights):&lt;/strong&gt; 4 x €500.00 = €2,000.00&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt; Breakfast (5 Days, included):&lt;/strong&gt; 5 x €0.00 = €0.00&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt; Lunch (5 Days):&lt;/strong&gt; 5 x €120.00 = €600.00&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt; Dinner (5 Days):&lt;/strong&gt; 5 x €80.00 = €400.00&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p&gt;&lt;strong&gt;Total Amount: €3,320.00&lt;/strong&gt;&lt;/p&gt;
-          </code>
-        </pre>
-
-
-
-      <h4>Rendered items</h4>
-      <p>Packege: The 5 day relaxed trip crafted by you!</p>
-      <img src="img/vatican_museum.png" alt="vatican museum Official Website" style="width:200px; height:125px;">
-      <p>Vatican Museum</p>
-      <p>day 1-3</p>
-      <img src="img/lurve-2.png" alt="Musée du Louvre Official Website" style="width:200px; height:125px;">
-      <p>The Lurve </p>
-      <p>day 3-5</p>
-      <p>Days total <strong> 5</strong> </p>
-      <ul>
-        <li><strong>The Louvre Ticket:</strong> 1 x €45.00 = €45.00</li>
-        <li><strong>Vatican Museum Ticket:</strong> 1 x €75.00 = €75.00</li>
-        <li><strong>Train (Vatican to Paris, day 3):</strong> 1 x €200.00 = €200.00</li>
-        <li><strong>5-Star Hotel (4 Nights):</strong> 4 x €500.00 = €2,000.00</li>
-        <li><strong> Breakfast (5 Days, included):</strong> 5 x €0.00 = €0.00</li>
-        <li><strong> Lunch (5 Days):</strong> 5 x €120.00 = €600.00</li>
-        <li><strong> Dinner (5 Days):</strong> 5 x €80.00 = €400.00</li>
-      </ul>
-      <p><strong>Total Amount: €3,320.00</strong></p>
-    </section>
-
-    <section class="element">
-      <h3> About the company</h3>
-      <h4>Sample code</h4>
-      <pre>
+            &lt;h1&gt;The Louvre&lt;/h1&gt;
+            &lt;h2&gt;The Louvre&lt;/h2&gt;
+            &lt;h3&gt;The Louvre&lt;/h3&gt;
+            &lt;h4&gt;The Louvre&lt;/h4&gt;</code>
+          </pre>
+          
+          <h4>Rendered element:</h4>
+          <h1>The Louvre</h1>
+          <h2>The Louvre</h2>
+          <h3>The Louvre</h3>
+          <h4>The Louvre</h4>
+        </section>
+        
+        <section class="element">
+          <!-- A paragraph-->
+          <h3>Paragraphs</h3>
+          <h4>Sample code</h4>
           <code>
-          &lt;strong&gt;Who is the company to potential customers? (as a person)&lt;/strong&gt;
-          &lt;p&gt;Our service is for anyone planning a trip. It is for people who want a perfect itinerary 
-          tailored specifically to their needs.&lt;/p&gt;
-          &lt;strong&gt;Why might this company entice someone to purchase a product or service&lt;/strong&gt;
-          &lt;p&gt;Our service fills the gap between planning a trip yourself and using a traditional travel 
-          agency's fixed plans. It is custom-made and highly flexible. You simply tell us what you like 
-          to eat, hotels of your liking, perfered transit drop your destinations in the itinerary and we 
-          will arrange the routes, restaurants, accommodations, transit, and tickets for you all at once.
-          &lt;/p&gt;
+            &lt;p&gt;Housed in Eugène Delacroix's former apartment, the Musée National Eugène-Delacroix is dedicated to the painter's memory. It was created on the initiative of some of the greatest artists of the 1920s - such as Maurice Denis, Paul Signac, Édouard Vuillard and Ker-Xavier Roussel - and is a testament to their admiration for Delacroix and his work&lt;/p&gt;
           </code>
-        </pre>
-      <h4>Rendered items</h4>
-      <!--Given the company, define the basic branding ideas.These should include: 
-          What does the company do, or offer?
-          Who is the company to potential customers? (as a person) Why might this company entice someone to purchase a product or service-->
-      <strong>What does the company do, or offer?</strong>
-      <p>Our company makes travel planning easy. Everyone deserves a hassle-free, relaxed trip without tourist traps or
-        the worry of connecting transit. Keeping track of tickets, booking hotels well in advance without backup plans,
-        or managing restaurant reservations takes the fun out of traveling - it's time consuming and draining. Finding a
-        good travel agency also involves a lot of tedious comparing. Many agencies lack flexibility, forcing you to wake
-        up at 5:00 AM and spend hours at shady souvenir shops.<b>We believe your time is better spent exploring the
-          destinations you actually care about.
-          That's why planning with us makes your travel better. </b>Simply visit our website, pick your favorite
-        destinations, choose your starting point, and select your hotel and food you like to eat. Tell us how you wish
-        to travel, and we will tailor the perfect plan for you in no time.</p>
-
-      <strong>Who is the company to potential customers? (as a person)</strong>
-      <p>Our service is for anyone planning a trip. It is for people who want a perfect itinerary tailored specifically
-        to their needs.</p>
-      <strong>Why might this company entice someone to purchase a product or service</strong>
-      <p>Our service fills the gap between planning a trip yourself and using a traditional travel agency's fixed plans.
-        It is custom-made and highly flexible. You simply tell us what you like to eat, hotels of your liking, perfered
-        transit drop your destinations in the itinerary and we will arrange the routes, restaurants, accommodations,
-        transit, and tickets for you all at once.</p>
-
-      <!--From your branding ideas, assemble brand components including:
-
-          Fonts
-          Colour palettes
-          Potential imagery, and, or, art direction
-            -->
-
-      
-      <h3> Fonts&Colour palettes</h3>
-      <h4>Sample code</h4>
-      <pre>
+          
+          <h4>Rendered element:</h4>
+          <p>Housed in Eugène Delacroix's former apartment, the Musée National Eugène-Delacroix is dedicated to the
+            painter's memory. It was created on the initiative of some of the greatest artists of the 1920s - such as
+            Maurice Denis, Paul Signac, Édouard Vuillard and Ker-Xavier Roussel - and is a testament to their admiration for
+            Delacroix and his work</p>
+          </section>
+          
+          <!-- Numbered lists -->
+          
+          <section class="element">
+            <h3>Numbered Lists</h3>
+            
+            <h4> CSS Selector</h4>
+            <pre>
+              
+            </pre>
+            
+            <h4>Sample code</h4>
             <code>
-              &lt;p style="font-family: 'PP Neue Montreal', sans-serif;"&gt; Font:PP Neue Montreal &lt;/p&gt;
-              &lt;p style="font-family: 'PP Neue Montreal', sans-serif;"&gt; Color: Warm orange &lt;/p&gt;
-              &lt;div style="font-family: 'PP Neue Montreal', sans-serif; background-color: #FF5722;  padding: 20px; line-height: 0.9;"&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;DdEeFfGgHhIiJj&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;KkLl&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;MmNnOoPpQq&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;RrSsTtXxYy&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;Zz&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;0123456789&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;*&amp;^%$$#&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;UuVvWw&lt;/p&gt;
-              &lt;/div&gt;
-    
-             
-              &lt;p style="font-family: 'futura', sans-serif;"&gt; Font:Futura&lt;/p&gt;
-              &lt;p style="font-family: 'futura', sans-serif;"&gt; Color: Vabriant green &lt;/p&gt;
-              &lt;div style="font-family: 'futura', sans-serif; background-color: #cbff22;  padding: 20px; line-height: 0.9;"&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;DdEeFfGgHhIiJj&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;KkLl&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;MmNnOoPpQq&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;RrSsTtXxYy&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;Zz&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;0123456789&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;*&amp;^%$$#&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;UuVvWw&lt;/p&gt;
-              &lt;/div&gt;
-    
-              &lt;p style="font-family: 'GT Pressura Mono', monospace;"&gt; Font:GT Pressura Mono&lt;/p&gt;
-              &lt;p style="font-family: 'GT Pressura Mono', monospace;"&gt; Color: Grey scale &lt;/p&gt;
-              &lt;div style="font-family: 'GT Pressura Mono',  monospace; background-color: #767676; color:white; padding: 20px; line-height: 0.9;"&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;DdEeFfGgHhIiJj&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;KkLl&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;MmNnOoPpQq&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;RrSsTtXxYy&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;Zz&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;0123456789&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;*&amp;^%$$#&lt;/p&gt;
-                &lt;p style="font-size: 80px; margin: 0;"&gt;UuVvWw&lt;/p&gt;
-              &lt;/div&gt;
-
+              &lt;ol type="1"&gt; &lt;li&gt;The Louvre&lt;/li&gt; &lt;li&gt;Duomo de Milano&lt;/li&gt; &lt;li&gt;Saint Peter's Basilica&lt;/li&gt; &lt;/ol&gt;
+            </code>
+            
+            <h4>Rendered element:</h4>
+            
+            <ol type="1">
+              <li>The Louvre</li>
+              <li>Duomo de Milano</li>
+              <li>Saint Peter's Basilica</li>
+            </ol>
+          </section>
+          
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+        
+        
+        
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <!--Zilin-->
+        <section id="combined_elements">
+          <h2>Combined Elements</h2>
+          <section class="element">
+            <h3>Main Navigation</h3>
+            
+            <h4> CSS Selector</h4>
+            <pre>
+              nav 
+              
+              nav ul 
+              
+              nav a:hover, 
+              nav a:focus 
+            </pre>
+            
+            
+            <h4>Sample code:</h4>
+            <pre><code>
+              &lt;nav&gt;
+              &lt;ul&gt; 
+              &lt;li&gt;&lt; a href="#PlanYourTrip_page.html" target="_blank"&gt;Plan your Trip&lt;/a&gt;"&lt;/li&gt; &lt;li&gt;"
+              &lt;a href="#PopularDestination_page.html" target="_blank"&gt;popular destination&lt;/a&gt;&lt;/li&gt; 
+              &lt;li&gt;&lt;a href="#PastTravelersItennery_page.html" target="_blank"&gt;
+              Past travelers' Itennery&lt;/a&gt;"&lt;/li&gt; &lt;li&gt;"&lt;a href="WhoAreWe.html" target="_blank"&gt;Who are we&lt;/a&gt;
+              &lt;/li&gt; &lt;li&gt;&lt;a href="OurPartner.html" target="_blank"&gt;Our partner&lt;/a&gt;&lt;/li&gt;
+              &lt;/nav&gt;
             </code>
           </pre>
-
-      <h4>Rendered items</h4>
-
-      <p style="font-family: 'PP Neue Montreal', sans-serif;"> Font:PP Neue Montreal </p>
-      <p style="font-family: 'PP Neue Montreal', sans-serif;"> Color: Warm orange </p>
-      <div
-        style="font-family: 'PP Neue Montreal', sans-serif; background-color: #FF5722;  padding: 20px; line-height: 0.9;">
-        <p style="font-size: 80px; margin: 0;">AaBbCc</p>
-        <p style="font-size: 80px; margin: 0;">DdEeFfGgHhIiJj</p>
-        <p style="font-size: 80px; margin: 0;">KkLl</p>
-        <p style="font-size: 80px; margin: 0;">MmNnOoPpQq</p>
-        <p style="font-size: 80px; margin: 0;">RrSsTtXxYy</p>
-        <p style="font-size: 80px; margin: 0;">Zz</p>
-        <p style="font-size: 80px; margin: 0;">0123456789</p>
-        <p style="font-size: 80px; margin: 0;">*&^%$$#</p>
-        <p style="font-size: 80px; margin: 0;">UuVvWw</p>
-      </div>
-
-
-      <p style="font-family: 'futura', sans-serif;"> Font:Futura</p>
-      <p style="font-family: 'futura', sans-serif;"> Color: Vabriant green </p>
-      <div style="font-family: 'futura', sans-serif; background-color: #b3dd28;  padding: 20px; line-height: 0.9;">
-        <p style="font-size: 80px; margin: 0;">AaBbCc</p>
-        <p style="font-size: 80px; margin: 0;">DdEeFfGgHhIiJj</p>
-        <p style="font-size: 80px; margin: 0;">KkLl</p>
-        <p style="font-size: 80px; margin: 0;">MmNnOoPpQq</p>
-        <p style="font-size: 80px; margin: 0;">RrSsTtXxYy</p>
-        <p style="font-size: 80px; margin: 0;">Zz</p>
-        <p style="font-size: 80px; margin: 0;">0123456789</p>
-        <p style="font-size: 80px; margin: 0;">*&^%$$#</p>
-        <p style="font-size: 80px; margin: 0;">UuVvWw</p>
-      </div>
-
-      <p style="font-family: 'GT Pressura Mono', monospace;"> Font:GT Pressura Mono</p>
-      <p style="font-family: 'GT Pressura Mono', monospace;"> Color: Grey scale </p>
-      <div
-        style="font-family: 'GT Pressura Mono',  monospace; background-color: #767676; color:white; padding: 20px; line-height: 0.9;">
-        <p style="font-size: 80px; margin: 0;">AaBbCc</p>
-        <p style="font-size: 80px; margin: 0;">DdEeFfGgHhIiJj</p>
-        <p style="font-size: 80px; margin: 0;">KkLl</p>
-        <p style="font-size: 80px; margin: 0;">MmNnOoPpQq</p>
-        <p style="font-size: 80px; margin: 0;">RrSsTtXxYy</p>
-        <p style="font-size: 80px; margin: 0;">Zz</p>
-        <p style="font-size: 80px; margin: 0;">0123456789</p>
-        <p style="font-size: 80px; margin: 0;">*&^%$$#</p>
-        <p style="font-size: 80px; margin: 0;">UuVvWw</p>
-      </div>
-    </section>
-
-    <section>
-      <h3>Potential imagery</h3>
-      <h4> CSS Selector</h4>
-      <pre>
-        <code>
-        .destination-grid 
-        .popular_destination 
-        .popular_destination img 
-        .popular_destination h2 
-        .popular_destination a 
-        .popular_destination a:hover,
-        .popular_destination a:focus 
-      </code>
-      </pre>
-      <h4>Sample code </h4>
-      <pre>
-          <code>
-            &lt;img src="img/italy-colosseum.png" alt="colosseum" style="width:400px; height:250px;"&gt;
-            &lt;img src="img/food-italy-trufflerisotto.png"  alt="" width="600" &gt;
-            &lt;img src="img/food-france-croissant.png" alt="" width="300" &gt;
-            &lt;img src="img/italy-maxxi.png" alt="" width="500" &gt;
-            &lt;img src="img/vatican-saint_peters_basilica.png" alt="" width="600" &gt;
-            &lt;img src="img/food-swiss-fondue.png" alt="" width="600" &gt;
-            &lt;img src="img/food-italy-maritozzi.png" alt="" width="400" &gt;
-            &lt;img src="img/lurve-3.png" alt="" width="400" &gt;
-            &lt;img src="img/lurve-4.png" alt="" width="500" &gt;
-            &lt;img src="img/egypt-kom_ombo_temple.png" alt="" width="800" &gt;
-            &lt;img src="img/france-mont_st_michel.png" alt="" width="900" &gt;
-          </code>
-        </pre>
-      <h4>Rendered items </h4>
-      <section class="destination-grid">
-        <div class="popular_destination">
-          <img src="img/italy-colosseum.png" alt="Musée du Louvre Official Website" >
-          <h2> name</h2>
-          <p> , </p>
-          <p>Ticket price: €- €</p>
-          <p>Most traveler spend  -  hours here</p>
-          <a href=" https://www.louvre.fr/">View Details</a>
-        </div>
-
-        <div class="popular_destination">
-          <img src="img/france-mont_st_michel.png" alt="Musée du Louvre Official Website" >
-          <h2> name</h2>
-          <p> , </p>
-          <p>Ticket price: €- €</p>
-          <p>Most traveler spend  -  hours here</p>
-          <a href=" https://www.louvre.fr/">View Details</a>
-        </div>
-
-        <div class="popular_destination">
-          <img src="img/france-arc_de_triomphe.png" alt="Musée du Louvre Official Website" >
-          <h2> name</h2>
-          <p> , </p>
-          <p>Ticket price: €- €</p>
-          <p>Most traveler spend  -  hours here</p>
-          <a href=" https://www.louvre.fr/">View Details</a>
-        </div>
-
-        <div class="popular_destination">
-          <img src="img/vatican-saint_peters_basilica.png" alt="Musée du Louvre Official Website" >
-          <h2> name</h2>
-          <p> , </p>
-          <p>Ticket price: €- €</p>
-          <p>Most traveler spend  -  hours here</p>
-          <a href=" https://www.louvre.fr/">View Details</a>
-        </div>
-
-       
-      </section>
-      
-
-      <br>
-      <img src="img/italy-colosseum.png" alt="colosseum" style="width:400px; height:250px;">
-      <img src="img/food-italy-trufflerisotto.png" alt="" width="600">
-      <img src="img/food-france-croissant.png" alt="" width="300">
-      <img src="img/italy-maxxi.png" alt="" width="500">
-      <img src="img/vatican-saint_peters_basilica.png" alt="" width="600">
-      <img src="img/food-swiss-fondue.png" alt="" width="600">
-      <img src="img/food-italy-maritozzi.png" alt="" width="400">
-      <img src="img/lurve-3.png" alt="" width="400">
-      <img src="img/lurve-4.png" alt="" width="500">
-      <img src="img/egypt-kom_ombo_temple.png" alt="" width="800">
-      <img src="img/france-mont_st_michel.png" alt="" width="900">
-    </section>
-
-
-
-  </section>
-  <!-- // COMBINED ELEMENTS SECTION -->
-
-
-
-  <section id="citations">
-    <h2>Citations</h2>
-
-    <ul>
-      <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a
-          href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
-      </li>
-      <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-      <!-- added citations-->
-      <li> <strong>vatican museum</strong>. Retrieved from <a
-          href="https://www.museivaticani.va/content/museivaticani/en.html">https://www.museivaticani.va/content/museivaticani/en.html</a>.
-      </li>
-      <li> <strong>Louvre Museum</strong>. Retrieved from <a
-          href="https://www.louvre.fr/en">https://www.louvre.fr/en</a>.</li>
-      <li>amex icon<a href="https://www.flaticon.com/free-icons/amex" title="amex icons">Amex icons created by Pixel
-          Buddha - Flaticon</a></li>
-      <li>visa icon<a href="https://www.flaticon.com/free-icons/visa" title="visa icons">Visa icons created by Freepik -
-          Flaticon</a></li>
-      <li>mastercard<a href="https://www.flaticon.com/free-icons/mastercard" title="mastercard icons">Mastercard icons
-          created by Alex80 - Flaticon</a></li>
-      <li>spain-Basílica_de_la_Sagrada_Família<a href="https://www.shutterstock.com/image-photo/barcelona-spain-may-9-2024-exteriors-2519032987?trackingId=10166328-fe3c-46b5-94f1-754467619bab&listId=searchResults" title="#">
-          created by Amith Nag</a></li>
-      <li>duomo_de_milano <a href="https://kenzly.com/milan-cathedral-duomo-di-milano-a-masterpiece-of-gothic-architecture/" title="#">
-          created by Kenzly </a></li>    
-       <li>The colosseum <a href="https://www.livescience.com/roman-colosseum" title="#">
-            created by  Emily Staniforth</a></li> 
-       <li> Mont saint michel <a href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" title="#">
-        created by normandy tourism</a></li>   
-        <li> Arc de Triomphe <a href="https://www.locationscout.net/france/5350-arc-de-triomphe-street-view-paris" title="#">
-          created by  Robert Schmalle        </a></li>   
-          <li> Mont saint michel <a href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" title="#">
-            created by  Robert Schmalle
-          </a></li>           
-      
-            
-            
-            
-
           
+          <h4>Rendered element:</h4>
+          <nav>
+            <ul>
+              <li> <a href="listing_page.html" target="_blank">Plan your Trip</a></li>
+              <li> <a href="#PopularDestination_page.html" target="_blank">popular destination</a></li> 
+              <li> <a href="#PastTravelersItennery_page.html" target="_blank">Past travelers' Itennery</a></li>
+              <li> <a href="about.html" target="_blank">About us</a> </li>
+              <li> <a href="feedback.html" target="_blank">Give Feedback</a> </li>
+            </ul>
+          </nav>
+          
+        </section>
+        
+        <section class="element">
+          <!--A product/service listing -->
+          <h3>Product/Service Listing</h3>
+          <h4> CSS Selector</h4>
+          <pre>
+            <code>
+              .destination-grid 
+              .popular_destination 
+              .popular_destination img 
+              .popular_destination h2 
+              .popular_destination a 
+              .popular_destination a:hover,
+              .popular_destination a:focus 
+            </code>
+          </pre>
+          
+          <h4>Sample code</h4>
+          
+          
+          <pre>
+            <code>
+              &lt;div class="popular_destination"&gt;
+              &lt;img src="img/lurve-2.png" alt="Musée du Louvre Official Website" "&gt;
+              &lt;h2&gt;The Lurve&lt;/h2&gt;
+              &lt;p&gt;Paris, France&lt;/p&gt;
+              &lt;p&gt;Ticket price: €15- €45&lt;/p&gt;
+              &lt;p&gt;Most traveler spend 2 - 3.5 hours here&lt;/p&gt;
+              
+              &lt;a href=" [https://www.louvre.fr/](https://www.louvre.fr/)"&gt;View Details&lt;/a&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="popular_destination"&gt;
+              &lt;img src="img/vatican_museum.png" alt="vatican museum Official Website" "&gt;
+              &lt;h2&gt;Vatican Museum&lt;/h2&gt;
+              &lt;p&gt;Vatican City&lt;/p&gt;
+              &lt;p&gt;Ticket price: €15- €75&lt;/p&gt;
+              &lt;p&gt;Most traveler spend 2.5 - 4 hours here&lt;/p&gt;
+              &lt;a href=" [https://www.museivaticani.va/content/museivaticani/en.html](https://www.museivaticani.va/content/museivaticani/en.html)"&gt;View Details&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class="popular_destination"&gt;
+              &lt;img src="img/egypt-kom_ombo_temple.png" alt="egypt-kom_ombo_temple" "&gt;
+              &lt;h2&gt;Kom Ombo Temple&lt;/h2&gt;
+              &lt;p&gt;Egypt&lt;/p&gt;
+              &lt;p&gt;Ticket price: €6- €25&lt;/p&gt;
+              &lt;p&gt;Most traveler spend 5 - 6 hours here&lt;/p&gt;
+              &lt;a href=" [https://www.museivaticani.va/content/museivaticani/en.html](https://www.museivaticani.va/content/museivaticani/en.html)"&gt;View Details&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
+          
+          
+          <h4>Rendered Elements:</h4>
+          <section class="destination-grid">
+            
+            <!--Musée du Louvre -->
+            <div class="popular_destination">
+              <img src="img/lurve-2.png" alt="Musée du Louvre Official Website">
+              <h2>The Louvre</h2>
+              <div class="destination-info">
+                <p>Paris, France</p>
+                <p>Ticket price: €15- €45</p>
+                <p>Most traveler spend 2 - 3.5 hours here</p>
+              </div>
+              <div class="destination-action">
+                <a class="view_button" href="https://www.louvre.fr/" target="_blank">View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+              </div>
+            </div>
+            
+            <!--vatican_museum -->
+            <div class="popular_destination">
+              <img src="img/vatican-saint_peters_basilica.png" alt="Vatican Museum Official Website">
+              <h2>Vatican Museum</h2>
+              <div class="destination-info">
+                <p>Vatican City</p>
+                <p>Ticket price: €15 - €75</p>
+                <p>Most traveler spend 2.5 - 4 hours here</p>
+              </div>
+              <div class="destination-action">
+                <a class="view_button" href="https://www.museivaticani.va/content/museivaticani/en.html" target="_blank">View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+              </div>
+            </div>
+            
+            <!--arc_de_triomphe -->
+            <div class="popular_destination">
+              <img src="img/france-arc_de_triomphe.png" alt="Arc de Triomphe">
+              <h2>Arc de Triomphe</h2>
+              <div class="destination-info">
+                <p>Paris, France</p>
+                <p>Ticket price: Free </p>
+                <p>Most traveler spend 0.5 - 1 hours here</p>
+              </div>
+              <div class="destination-action">
+                <a class="view_button" href="https://www.paris-arc-de-triomphe.fr/en" target="_blank">View Details</a>
+                <a class="add_button" href=" #">Add to Itinerary</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        
+        <!--A payment form-->
+        <!--Kimi-->
+        <section class="element">
+          <h3>Payment Form with design</h3>
+          
+          <h4> CSS Selector</h4>
+          <p>.input-form<br>.form-section<br>.form-group<br>.primary-label<br>.text-input-field<br>.payment-methods<br>.method-card<br>.card-content<br>.form-footer</p>
+          
+          
+          <h4>Sample code</h4>
+          <code>&lt;h3&gt;Customer Information&lt;/h3&gt;<br>
+            &lt;form class="input-form" method="post" action="#"&gt;<br>
+            &lt;label class="primary-label" for="first-name"&gt;First Name&lt;/lable&gt;<br>
+            &lt;input class="text-input-field" type="text" id="first-name"&gt;<br>
+            &lt;label class="primary-label" for="email"&gt;Email Address&lt;/lable&gt;<br>
+            &lt;input class="text-input-field" type="email" id="email"&gt;<br>
+            &lt;label class="primary-label" for="phone-number"&gt;Phone number&lt;/lable&gt;<br>
+            &lt;input class="text-input-field" type="tel" id="phone-number" placeholder="123-456-7890"&gt;<br>
+            &lt;select name="country"&gt;<br>
+            &lt;option value="CA" selected&gt;CA&lt;/option&gt;<br>
+            &lt;/select&gt;<br>
+            &lt;/form&gt;<br>
+            &lt;h4&gt;Payment&lt;/h4&gt;<br>
+            &lt;p&gt;$0.00&lt;/p&gt;<br>
+            &lt;button type="submit" class="button-action"&gt;Submit&lt;/button&gt;
+          </code>
+          
+          
+          
+          <h4>Rendered items:</h4>
+          
+          <section class="form-container">
+            <h1>Check Out</h1>
+            <form class="input-form" method="post" action="#">
+              <fieldset class="form-section">
+                <legend>Customer Information</legend>
+                <div class="info-container">
+                  <div class="form-group">
+                    <label class="primary-label" for="first-name">Name</label>
+                    <input class="text-input-field" type="text" id="first-name" placeholder="Last Name">
+                    <input class="text-input-field" type="text" id="last-name" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                    <label class="primary-label" for="email">Email</label>
+                    <input class="text-input-field" type="email" id="email" placeholder="mail@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label class="primary-label" for="phone-number">Phone Number</label>
+                    <input class="text-input-field" type="tel" id="phone-number">
+                  </div>
+                </div>
+              </fieldset>
+              
+              <fieldset class="form-section">
+                <legend>Payment Details</legend>
+                <div class="payment-methods">
+                  <label class="method-card">
+                    <input type="radio" name="pay-method" value="card" checked>
+                    <span class="card-content">Credit Card
+                      <span class="box1-card-icons">
+                        <img src="img/visa.png" alt="#">
+                        <img src="img/mastercard.png" alt="#">
+                        <img src="img/amex.png" alt="#">
+                        <img src="img/unionpay.png" alt="#">
+                      </span>
+                    </span>
+                  </label>
+                  <label class="method-card">
+                    <input type="radio" name="pay-method" value="paypal">
+                    <span class="card-content">PayPal
+                      <span class="box1-card-icons">
+                        <img src="img/paypal.png" alt="#">
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                
+                <div class="info-container">
+                  <div class="form-group">
+                    <label class="primary-label" for="card-number">Card Number</label>
+                    <input class="text-input-field" type="text" id="card-number" placeholder="0000 0000 0000 0000">
+                  </div>
+                  <div class="form-group">
+                    <label class="primary-label" for="cvc-number">CVV</label>
+                    <input class="text-input-field" type="text" id="cvc-number" placeholder="000">
+                  </div>
+                  <div class="form-group">
+                    <label class="primary-label" for="expire-date">Exp. Date</label>
+                    <input class="text-input-field" type="text" id="expire-date" placeholder="MM/YY">
+                  </div>
+                </div>
+              </fieldset>
+              
+              <div class="form-footer">
+                <h2>Total Payment: $30.00</h2>
+                <button type="submit" class="button-action">Submit Order</button>
+              </div>
+              
+            </form>
+          </section>
+          
+        </section>
+        
+        
+        
+        <section class="element">
+          
+          <!--A 'checkout cart' with at least two items-->
+          <!--Kimi-->
+          <h3>Checkout Cart</h3>
+          
+          <h4> CSS Selector</h4>
+          <p>.checkout-layout<br>.cart-container<br>.cart-header<br>.cart-item</p>
+          
+          
+          <h4>Sample code</h4>
+          <pre>
+            <code>
+              &lt;section class="cart-container"&gt;
+              &lt;h1&gt;Your Itinerary&lt;/h1&gt;
+              &lt;h2&gt;2 destination&lt;/h2&gt;
+              &lt;h3&gt;&lt;/h3&gt;
+              &lt;div class="cart-header"&gt;
+              &lt;span class="header-product"&gt;Destination&lt;/span&gt;
+              &lt;span class="header-attr"&gt;Group Size&lt;/span&gt;
+              &lt;span class="header-attr"&gt;Days&lt;/span&gt;
+              &lt;span class="header-attr"&gt;Total Price&lt;/span&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="city-header"&gt;
+              &lt;span class="city-name"&gt;Rome&lt;/span&gt;
+              &lt;div class="header-date-selector"&gt;
+              &lt;label class="primary-label" for="rome-start-date"&gt;Start Date&lt;/label&gt;
+              &lt;input class="date-input-field" type="date" id="rome-start-date"&gt;
+              &lt;/div&gt;
+              &lt;/div&gt;
+              
+              &lt;!--1st item--&gt;
+              &lt;div class="cart-item"&gt;
+              &lt;div class="product-info"&gt;
+              &lt;img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum"&gt;
+              &lt;div class="product-details"&gt;
+              &lt;h4 class="product-name"&gt;Vatican Museum&lt;/h4&gt;
+              &lt;input class="note-input" type="text" placeholder="Message to us:"&gt;
+              &lt;/div&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="cart-attribute"&gt;
+              &lt;input type="number" value="1" min="1" class="qty-field"&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="cart-attribute"&gt;
+              &lt;input type="number" value="1" min="1" class="qty-field"&gt;
+              &lt;/div&gt;
+              
+              &lt;div class="cart-price"&gt;
+              &lt;h5&gt;$50.00&lt;/h5&gt;
+              &lt;/div&gt;
+              &lt;/div&gt;
+              …
+              &lt;div class="cart-footer"&gt;
+              &lt;h2&gt;Total: $100.00&lt;/h2&gt;
+              &lt;/div&gt;
+              &lt;/section&gt;
+              &lt;/section&gt;
+            </code>
+          </pre>
+          
+          
+          
+          <h4>Rendered items</h4>
+          <section class="cart-container">
+            <h1>Your Itinerary</h1>
+            <h2>2 destination</h2>
+            <h3></h3>
+            <div class="cart-header">
+              <span class="header-product">Destination</span>
+              <span class="header-attr">Group Size</span>
+              <span class="header-attr">Days</span>
+              <span class="header-attr">Total Price</span>
+            </div>
+            
+            <div class="city-header">
+              <span class="city-name">Rome</span>
+              <div class="header-date-selector">
+                <label class="primary-label" for="rome-start-date">Start Date</label>
+                <input class="date-input-field" type="date" id="rome-start-date">
+              </div>
+            </div>
+            
+            <!--1st item-->
+            <div class="cart-item">
+              <div class="product-info">
+                <img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum">
+                <div class="product-details">
+                  <h4 class="product-name">Vatican Museum</h4>
+                  <input class="note-input" type="text" placeholder="Special Request:">
+                </div>
+              </div>
+              
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              
+              <div class="cart-price">
+                <h5>$50.00</h5>
+              </div>
+            </div>
+            
+            <!--2nd item-->
+            <div class="cart-item">
+              <div class="product-info">
+                <img class="small-thumbnail" src="img/vatican-saint_peters_basilica.png" alt="vatican-saint_peters_basilica">
+                <div class="product-details">
+                  <h4 class="product-name">Vatican Saint Peters Basilica</h4>
+                  <input class="note-input" type="text" placeholder="Special Request:">
+                </div>
+              </div>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              <div class="cart-price">
+                <h5>$50.00</h5>
+              </div>
+            </div>
+            
+            <div class="cart-footer">
+              <h2>Total: $100.00</h2>
+            </div>
+          </section>
+          
+          
+          <!--       ************        Company Info - Zilin    ***********             -->
+          <section class="element">
+            <h3> About the company</h3>
+            <h4>Sample code</h4>
+            <pre>
+              <code>
+                &lt;strong&gt;Who is the company to potential customers? (as a person)&lt;/strong&gt;
+                &lt;p&gt;Our service is for anyone planning a trip. It is for people who want a perfect itinerary 
+                tailored specifically to their needs.&lt;/p&gt;
+                &lt;strong&gt;Why might this company entice someone to purchase a product or service&lt;/strong&gt;
+                &lt;p&gt;Our service fills the gap between planning a trip yourself and using a traditional travel 
+                agency's fixed plans. It is custom-made and highly flexible. You simply tell us what you like 
+                to eat, hotels of your liking, perfered transit drop your destinations in the itinerary and we 
+                will arrange the routes, restaurants, accommodations, transit, and tickets for you all at once.
+                &lt;/p&gt;
+              </code>
+            </pre>
+            <h4>Rendered items</h4>
+            <!--Given the company, define the basic branding ideas.These should include: 
+            What does the company do, or offer?
+            Who is the company to potential customers? (as a person) Why might this company entice someone to purchase a product or service-->
+            <strong>What does the company do, or offer?</strong>
+            <p>Our company makes travel planning easy. Everyone deserves a hassle-free, relaxed trip without tourist traps or
+              the worry of connecting transit. Keeping track of tickets, booking hotels well in advance without backup plans,
+              or managing restaurant reservations takes the fun out of traveling - it's time consuming and draining. Finding a
+              good travel agency also involves a lot of tedious comparing. Many agencies lack flexibility, forcing you to wake
+              up at 5:00 AM and spend hours at shady souvenir shops.<b>We believe your time is better spent exploring the
+                destinations you actually care about.
+                That's why planning with us makes your travel better. </b>Simply visit our website, pick your favorite
+                destinations, choose your starting point, and select your hotel and food you like to eat. Tell us how you wish
+                to travel, and we will tailor the perfect plan for you in no time.</p>
+                
+                <strong>Who is the company to potential customers? (as a person)</strong>
+                <p>Our service is for anyone planning a trip. It is for people who want a perfect itinerary tailored specifically
+                  to their needs.</p>
+                  <strong>Why might this company entice someone to purchase a product or service</strong>
+                  <p>Our service fills the gap between planning a trip yourself and using a traditional travel agency's fixed plans.
+                    It is custom-made and highly flexible. You simply tell us what you like to eat, hotels of your liking, perfered
+                    transit drop your destinations in the itinerary and we will arrange the routes, restaurants, accommodations,
+                    transit, and tickets for you all at once.</p>
+                    
+                    <!--From your branding ideas, assemble brand components including:
+                    
+                    Fonts
+                    Colour palettes
+                    Potential imagery, and, or, art direction
+                    -->
+                    
+                    
+                    <h3> Fonts&Colour palettes</h3>
+                    <h4>Sample code</h4>
+                    <pre>
+                      <code>
+                        &lt;p&gt; Font: Comfortaa &lt;/p&gt;
+                        &lt;p&gt; Color: Warm orange &lt;/p&gt;
+                        &lt;div style="background-color: #FF5722;  padding: 20px; line-height: 0.9;"&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;DdEeFfGgHhIiJj&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;KkLl&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;MmNnOoPpQq&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;RrSsTtXxYy&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;Zz&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;0123456789&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;*&amp;^%$$#&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;UuVvWw&lt;/p&gt;
+                        &lt;/div&gt;
+                        
+                        
+                        &lt;p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"&gt; Font:Segoe UI&lt;/p&gt;
+                        &lt;p style="font-family: 'Segoe UI', sans-serif;"&gt; Color: Vabriant green &lt;/p&gt;
+                        &lt;div style="font-family: 'Segoe UI', sans-serif; background-color: #cbff22;  padding: 20px; line-height: 0.9;"&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;DdEeFfGgHhIiJj&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;KkLl&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;MmNnOoPpQq&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;RrSsTtXxYy&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;Zz&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;0123456789&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;*&amp;^%$$#&lt;/p&gt;
+                        &lt;p style="font-size: 80px; margin: 0;"&gt;UuVvWw&lt;/p&gt;
+                        &lt;/div&gt;
+                        
+                        
+                      </code>
+                    </pre>
+                    
+                    <h4>Rendered items</h4>
+                    
+                    <p> Font: Comfortaa <br> Purpose: Body & Button Font<br>Color: Warm orange</p>
+                    <div
+                    style="background-color: #FF5722;  padding: 20px; line-height: 0.9;">
+                    <p style="font-size: 80px; margin: 0;">AaBbCc</p>
+                    <p style="font-size: 80px; margin: 0;">DdEeFfGgHhIiJj</p>
+                    <p style="font-size: 80px; margin: 0;">KkLl</p>
+                    <p style="font-size: 80px; margin: 0;">MmNnOoPpQq</p>
+                    <p style="font-size: 80px; margin: 0;">RrSsTtXxYy</p>
+                    <p style="font-size: 80px; margin: 0;">Zz</p>
+                    <p style="font-size: 80px; margin: 0;">0123456789</p>
+                    <p style="font-size: 80px; margin: 0;">*&^%$$#</p>
+                    <p style="font-size: 80px; margin: 0;">UuVvWw</p>
+                  </div>
+                  
+                  
+                  <p style="font-family: 'Segoe UI', sans-serif;"> Font: Segoe UI <br> Purpose: Title Font<br>Color: Classic gray</p>
+                  <div style="font-family: 'Segoe UI', sans-serif; background-color: rgb(75, 75, 75);  color:white; padding: 20px; line-height: 0.9;">
+                    <p style="font-size: 80px; margin: 0;">AaBbCc</p>
+                    <p style="font-size: 80px; margin: 0;">DdEeFfGgHhIiJj</p>
+                    <p style="font-size: 80px; margin: 0;">KkLl</p>
+                    <p style="font-size: 80px; margin: 0;">MmNnOoPpQq</p>
+                    <p style="font-size: 80px; margin: 0;">RrSsTtXxYy</p>
+                    <p style="font-size: 80px; margin: 0;">Zz</p>
+                    <p style="font-size: 80px; margin: 0;">0123456789</p>
+                    <p style="font-size: 80px; margin: 0;">*&^%$$#</p>
+                    <p style="font-size: 80px; margin: 0;">UuVvWw</p>
+                  </div>
+                </section>
+                
+                <section>
+                  <h3>Potential imagery</h3>
+                  <h4> CSS Selector</h4>
+                  <pre>
+                    <code>
+                      .destination-grid 
+                      .popular_destination 
+                      .popular_destination img 
+                      .popular_destination h2 
+                      .popular_destination a 
+                      .popular_destination a:hover,
+                      .popular_destination a:focus 
+                    </code>
+                  </pre>
+                  <h4>Sample code </h4>
+                  <pre>
+                    <code>
+                      &lt;img src="img/italy-colosseum.png" alt="colosseum" style="width:400px; height:250px;"&gt;
+                      &lt;img src="img/food-italy-trufflerisotto.png"  alt="" width="600" &gt;
+                      &lt;img src="img/food-france-croissant.png" alt="" width="300" &gt;
+                      &lt;img src="img/italy-maxxi.png" alt="" width="500" &gt;
+                      &lt;img src="img/vatican-saint_peters_basilica.png" alt="" width="600" &gt;
+                      &lt;img src="img/food-swiss-fondue.png" alt="" width="600" &gt;
+                      &lt;img src="img/food-italy-maritozzi.png" alt="" width="400" &gt;
+                      &lt;img src="img/lurve-3.png" alt="" width="400" &gt;
+                      &lt;img src="img/lurve-4.png" alt="" width="500" &gt;
+                      &lt;img src="img/egypt-kom_ombo_temple.png" alt="" width="800" &gt;
+                      &lt;img src="img/france-mont_st_michel.png" alt="" width="900" &gt;
+                    </code>
+                  </pre>
+                  <h4>Rendered items </h4>
+                  <img src="img/italy-colosseum.png" alt="colosseum" style="width:400px; height:250px;">
+                  <img src="img/food-italy-trufflerisotto.png" alt="" width="600">
+                  <img src="img/food-france-croissant.png" alt="" width="300">
+                  <img src="img/italy-maxxi.png" alt="" width="500">
+                  <img src="img/vatican-saint_peters_basilica.png" alt="" width="600">
+                  <img src="img/food-swiss-fondue.png" alt="" width="600">
+                  <img src="img/food-italy-maritozzi.png" alt="" width="400">
+                  <img src="img/lurve-3.png" alt="" width="400">
+                  <img src="img/lurve-4.png" alt="" width="500">
+                  <img src="img/egypt-kom_ombo_temple.png" alt="" width="800">
+                  <img src="img/france-mont_st_michel.png" alt="" width="900">
+                </section>
 
-    </ul>
+          </section>
+          </section>
+          <!-- // COMBINED ELEMENTS SECTION -->
 
-  </section>
-
-
-
-
+              <section id="citations">
+                <h2>Citations</h2>
+                <ul>
+                  <li> <strong>vatican museum</strong>. Retrieved from <a
+                    href="https://www.museivaticani.va/content/museivaticani/en.html">https://www.museivaticani.va/content/museivaticani/en.html</a>.
+                  </li>
+                  <li> <strong>Louvre Museum</strong>. Retrieved from <a
+                    href="https://www.louvre.fr/en">https://www.louvre.fr/en</a>.</li>
+                    <li>Travel || Our Anniversary Trip To The Amalfi Coast Of Italy - Itsy Bitsy Indulgences. Retrieved from <a href="https://pin.it/38O0CAMvK" title="contact hero image">created by Travelista</a></li>
+                    <li>amex icon<a href="https://www.flaticon.com/free-icons/amex" title="amex icons">Amex icons created by Pixel
+                      Buddha - Flaticon</a></li>
+                      <li>visa icon<a href="https://www.flaticon.com/free-icons/visa" title="visa icons">Visa icons created by Freepik -
+                        Flaticon</a></li>
+                        <li>mastercard<a href="https://www.flaticon.com/free-icons/mastercard" title="mastercard icons">Mastercard icons
+                          created by Alex80 - Flaticon</a></li>
+                          <li>spain-Basílica_de_la_Sagrada_Família<a href="https://www.shutterstock.com/image-photo/barcelona-spain-may-9-2024-exteriors-2519032987?trackingId=10166328-fe3c-46b5-94f1-754467619bab&listId=searchResults" title="#">
+                            created by Amith Nag</a></li>
+                            <li>duomo_de_milano <a href="https://kenzly.com/milan-cathedral-duomo-di-milano-a-masterpiece-of-gothic-architecture/" title="#">
+                              created by Kenzly </a></li>    
+                              <li>The colosseum <a href="https://www.livescience.com/roman-colosseum" title="#">
+                                created by  Emily Staniforth</a></li> 
+                                <li> Mont saint michel <a href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" title="#">
+                                  created by normandy tourism</a></li>   
+                                  <li> Arc de Triomphe <a href="https://www.locationscout.net/france/5350-arc-de-triomphe-street-view-paris" title="#">
+                                    created by  Robert Schmalle</a></li>   
+                                    <li> Mont saint michel <a href="https://en.normandie-tourisme.fr/unmissable-sites/the-mont-saint-michel/" title="#">
+                                      created by  Robert Schmalle
+                                    </a></li>
+                                    <li> Vatican Museum Hero <a href="https://storage.googleapis.com/mytour-prod/blog/1659527904465_shutterstock-526891918-jpg.jpeg" title="#">
+                                      created by  Shuttersstock
+                                    </a></li>
+                                    <li> Vatican Museum Building <a href="https://pin.it/3Tch9lXMw" title="#">
+                                      created by David IBITSON
+                                    </a></li>
+                                    <li> Sistine Chapel, Vatican City <a href="https://pin.it/5AaUGUvrk" title="#">
+                                    </a></li>
+                                    <li> Borgia Apartments <a href="https://upload.wikimedia.org/wikipedia/commons/9/9f/Appartamento_Borgia%2C_Sala_dei_Santi_%28Sala_5_della_Collezione_di_Arte_Contemporanea%29_-FG_02.jpg" title="#"> created by Wikipedia
+                                    </a></li>  
+                                    <li> Stanze di Raffaello <a href="https://pin.it/hY13ZuooI" title="#">
+                                    </a></li>    
+                                    <li> The Creation of Adam <a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg" title="#">
+                                      created by Michelangelo
+                                    </a></li>
+                                    <li>ARC DE TRIOMPHE Hero <a href="https://pin.it/4qyRX3APH" title="#">
+                                      created by  eye catching beauties
+                                    </a></li>             
+                   
+                </ul>             
+              </section>
+                                                                
 </body>
-
 </html>
