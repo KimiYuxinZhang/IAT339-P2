@@ -28,6 +28,7 @@
         <li><a href="listing_page.html">Product Listing</a></li>
         <li><a href="checkout_page.html" >Checkout Page</a> </li>
         <li><a href="about_page.html">About us</a></li>
+        <li><a href="contact_page.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -67,41 +68,38 @@
     <h3>Navigation Link</h3>
     
     <h4>CSS selector:</h4>
-    <p>.button-nav</p>
+    <p>.view_button<br>.add_button</p>
     <h4>Sample code:</h4>
-    <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+    <code>&lt;a class="view_button" href="#" &gt;View Details&lt;/a&gt;</code>
     
     <h4>Rendered element:</h4>
-    <a class="button-nav" href="#">Default Button</a>
+    <div class="popular_destination">
+      <div class="destination-action">
+        <a class="view_button" href="https://www.louvre.fr/" target="_blank">View Details</a>
+        <a class="add_button" href=" #">Add to Itinerary</a>
+      </div>
+    </div>
     
   </section>
   
   <!--A submit and reset button for forms-->
-  <!--Zilin-->
   <section class="element">
     <h3>Submit/Reset Buttons</h3>
     <h4> CSS Selector</h4>
-    <pre>
-      .button-nav 
-      
-      .button-nav:hover, .button-nav:focus 
-    </pre>
+    <p>.button-action</p>
     
     
     <h4>Sample code:</h4>
-    <code>&lt;form action="#"&gt;&lt;input type="submit" value="Submit"&gt;&lt;input type="reset" value="Reset"&gt;&lt;/form&gt;</code>
+    <code>&lt;button type="submit" class="button-action"&gt;Sumbit&lt;button&gt;</code>
     
     <h4>Rendered element:</h4>
-    <form action="#">
-      <input class=" button-nav" type="submit" value="Submit">
-      <input class=" button-nav" type="reset" value="Reset">
-    </form>
+    <button type="submit" class="button-action">Submit</button>
     
     
   </section>
   
   <!--Text Input Field with Label-->
-   <!--Kimi-->
+  <!--Kimi-->
   <section class="element">
     <h3>Text Input Field with Label</h3>
     
@@ -523,7 +521,7 @@
         
         
         <section class="element">
-
+          
           <!--A 'checkout cart' with at least two items-->
           <!--Kimi-->
           <h3>Checkout Cart</h3>
@@ -588,73 +586,73 @@
           
           
           <h4>Rendered items</h4>
-            <section class="cart-container">
-              <h1>Your Itinerary</h1>
-              <h2>2 destination</h2>
-              <h3></h3>
-              <div class="cart-header">
-                <span class="header-product">Destination</span>
-                <span class="header-attr">Group Size</span>
-                <span class="header-attr">Days</span>
-                <span class="header-attr">Total Price</span>
+          <section class="cart-container">
+            <h1>Your Itinerary</h1>
+            <h2>2 destination</h2>
+            <h3></h3>
+            <div class="cart-header">
+              <span class="header-product">Destination</span>
+              <span class="header-attr">Group Size</span>
+              <span class="header-attr">Days</span>
+              <span class="header-attr">Total Price</span>
+            </div>
+            
+            <div class="city-header">
+              <span class="city-name">Rome</span>
+              <div class="header-date-selector">
+                <label class="primary-label" for="rome-start-date">Start Date</label>
+                <input class="date-input-field" type="date" id="rome-start-date">
               </div>
-              
-              <div class="city-header">
-                <span class="city-name">Rome</span>
-                <div class="header-date-selector">
-                  <label class="primary-label" for="rome-start-date">Start Date</label>
-                  <input class="date-input-field" type="date" id="rome-start-date">
-                </div>
-              </div>
-              
-              <!--1st item-->
-              <div class="cart-item">
-                <div class="product-info">
-                  <img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum">
-                  <div class="product-details">
-                    <h4 class="product-name">Vatican Museum</h4>
-                    <input class="note-input" type="text" placeholder="Special Request:">
-                  </div>
-                </div>
-                
-                <div class="cart-attribute">
-                  <input type="number" value="1" min="1" class="qty-field">
-                </div>
-                
-                <div class="cart-attribute">
-                  <input type="number" value="1" min="1" class="qty-field">
-                </div>
-                
-                <div class="cart-price">
-                  <h5>$50.00</h5>
+            </div>
+            
+            <!--1st item-->
+            <div class="cart-item">
+              <div class="product-info">
+                <img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum">
+                <div class="product-details">
+                  <h4 class="product-name">Vatican Museum</h4>
+                  <input class="note-input" type="text" placeholder="Special Request:">
                 </div>
               </div>
               
-              <!--2nd item-->
-              <div class="cart-item">
-                <div class="product-info">
-                  <img class="small-thumbnail" src="img/vatican-saint_peters_basilica.png" alt="vatican-saint_peters_basilica">
-                  <div class="product-details">
-                    <h4 class="product-name">Vatican Saint Peters Basilica</h4>
-                    <input class="note-input" type="text" placeholder="Special Request:">
-                  </div>
-                </div>
-                <div class="cart-attribute">
-                  <input type="number" value="1" min="1" class="qty-field">
-                </div>
-                <div class="cart-attribute">
-                  <input type="number" value="1" min="1" class="qty-field">
-                </div>
-                <div class="cart-price">
-                  <h5>$50.00</h5>
-                </div>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
               </div>
               
-              <div class="cart-footer">
-                <h2>Total: $100.00</h2>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
               </div>
-            </section>
-
+              
+              <div class="cart-price">
+                <h5>$50.00</h5>
+              </div>
+            </div>
+            
+            <!--2nd item-->
+            <div class="cart-item">
+              <div class="product-info">
+                <img class="small-thumbnail" src="img/vatican-saint_peters_basilica.png" alt="vatican-saint_peters_basilica">
+                <div class="product-details">
+                  <h4 class="product-name">Vatican Saint Peters Basilica</h4>
+                  <input class="note-input" type="text" placeholder="Special Request:">
+                </div>
+              </div>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              <div class="cart-price">
+                <h5>$50.00</h5>
+              </div>
+            </div>
+            
+            <div class="cart-footer">
+              <h2>Total: $100.00</h2>
+            </div>
+          </section>
+          
           
           <!--       ************        Company Info - Zilin    ***********             -->
           <section class="element">
@@ -724,9 +722,9 @@
                         &lt;/div&gt;
                         
                         
-                        &lt;p style="font-family: 'futura', sans-serif;"&gt; Font:Futura&lt;/p&gt;
-                        &lt;p style="font-family: 'futura', sans-serif;"&gt; Color: Vabriant green &lt;/p&gt;
-                        &lt;div style="font-family: 'futura', sans-serif; background-color: #cbff22;  padding: 20px; line-height: 0.9;"&gt;
+                        &lt;p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"&gt; Font:Segoe UI&lt;/p&gt;
+                        &lt;p style="font-family: 'Segoe UI', sans-serif;"&gt; Color: Vabriant green &lt;/p&gt;
+                        &lt;div style="font-family: 'Segoe UI', sans-serif; background-color: #cbff22;  padding: 20px; line-height: 0.9;"&gt;
                         &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc&lt;/p&gt;
                         &lt;p style="font-size: 80px; margin: 0;"&gt;DdEeFfGgHhIiJj&lt;/p&gt;
                         &lt;p style="font-size: 80px; margin: 0;"&gt;KkLl&lt;/p&gt;
@@ -744,8 +742,7 @@
                     
                     <h4>Rendered items</h4>
                     
-                    <p> Font: Comfortaa </p>
-                    <p> Color: Warm orange </p>
+                    <p> Font: Comfortaa <br> Purpose: Body & Button Font<br>Color: Warm orange</p>
                     <div
                     style="background-color: #FF5722;  padding: 20px; line-height: 0.9;">
                     <p style="font-size: 80px; margin: 0;">AaBbCc</p>
@@ -760,9 +757,8 @@
                   </div>
                   
                   
-                  <p style="font-family: 'futura', sans-serif;"> Font:Futura</p>
-                  <p style="font-family: 'futura', sans-serif;"> Color: Vabriant green </p>
-                  <div style="font-family: 'futura', sans-serif; background-color: #b3dd28;  padding: 20px; line-height: 0.9;">
+                  <p style="font-family: 'Segoe UI', sans-serif;"> Font: Segoe UI <br> Purpose: Title Font<br>Color: Classic gray</p>
+                  <div style="font-family: 'Segoe UI', sans-serif; background-color: rgb(75, 75, 75);  color:white; padding: 20px; line-height: 0.9;">
                     <p style="font-size: 80px; margin: 0;">AaBbCc</p>
                     <p style="font-size: 80px; margin: 0;">DdEeFfGgHhIiJj</p>
                     <p style="font-size: 80px; margin: 0;">KkLl</p>
@@ -830,16 +826,13 @@
                 <h2>Citations</h2>
                 
                 <ul>
-                  <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a
-                    href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
-                  </li>
-                  <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
                   <!-- added citations-->
                   <li> <strong>vatican museum</strong>. Retrieved from <a
                     href="https://www.museivaticani.va/content/museivaticani/en.html">https://www.museivaticani.va/content/museivaticani/en.html</a>.
                   </li>
                   <li> <strong>Louvre Museum</strong>. Retrieved from <a
                     href="https://www.louvre.fr/en">https://www.louvre.fr/en</a>.</li>
+                    <li>Travel || Our Anniversary Trip To The Amalfi Coast Of Italy - Itsy Bitsy Indulgences. Retrieved from <a href="https://pin.it/38O0CAMvK" title="contact hero image">created by Travelista</a></li>
                     <li>amex icon<a href="https://www.flaticon.com/free-icons/amex" title="amex icons">Amex icons created by Pixel
                       Buddha - Flaticon</a></li>
                       <li>visa icon<a href="https://www.flaticon.com/free-icons/visa" title="visa icons">Visa icons created by Freepik -
@@ -862,7 +855,7 @@
                                     <li> Vatican Museum Hero <a href="https://storage.googleapis.com/mytour-prod/blog/1659527904465_shutterstock-526891918-jpg.jpeg" title="#">
                                       created by  Shuttersstock
                                     </a></li>
-                                      <li> Vatican Museum Building <a href="https://pin.it/3Tch9lXMw" title="#">
+                                    <li> Vatican Museum Building <a href="https://pin.it/3Tch9lXMw" title="#">
                                       created by David IBITSON
                                     </a></li>
                                     <li> Sistine Chapel, Vatican City <a href="https://pin.it/5AaUGUvrk" title="#">
@@ -871,8 +864,11 @@
                                     </a></li>  
                                     <li> Stanze di Raffaello <a href="https://pin.it/hY13ZuooI" title="#">
                                     </a></li>    
-                                      <li> The Creation of Adam <a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg" title="#">
+                                    <li> The Creation of Adam <a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg" title="#">
                                       created by Michelangelo
+                                    </a></li>
+                                    <li>ARC DE TRIOMPHE Hero <a href="https://pin.it/4qyRX3APH" title="#">
+                                      created by  eye catching beauties
                                     </a></li>             
                                     
                                     
