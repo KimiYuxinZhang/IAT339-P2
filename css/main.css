@@ -17,9 +17,7 @@ Default styling for the style guide
   box-sizing: border-box;
 }
 body {
-  /*change font to -futura*/
   font-family: 'body-font', sans-serif;
-  padding-bottom: 2rem;
 }
 
 .element {
@@ -420,7 +418,7 @@ About page styling -------------------
   padding-bottom: 1rem; 
 }
 
- .event-card { 
+.event-card { 
   flex: 0 0 45%; 
   border-radius: 0.5rem; 
   min-width: 25rem;
@@ -432,7 +430,7 @@ About page styling -------------------
   margin-top: 1rem;
   color:white;
 }
-  
+
 .event-card img { 
   max-width: 100%; 
   min-width: 95%;
@@ -441,12 +439,12 @@ About page styling -------------------
   object-fit:  contain;
   margin-bottom: 1rem;
   margin: 0 auto 1rem auto; display: block;
- } 
-  
-  
+} 
 
 
- 
+
+
+
 .about-intro {
   color:white;
   font-size: 1.2rem;
@@ -797,7 +795,7 @@ COMBINED ELEMENTS -------------------
 .product-detail-hero h2{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
-
+  
 }
 .product-detail-title{
   min-width: 50rem;
@@ -812,7 +810,7 @@ COMBINED ELEMENTS -------------------
 .product-detail-intro {
   color:rgb(110, 76, 21);
   font-size: 1.2rem;
-
+  
   max-width: 40%;
   margin-top: 2rem;
   padding: 1rem 2rem;
@@ -920,9 +918,7 @@ body.product-detail-page-body .section-title {
 }
 .artist-bio {
   margin-bottom: 3rem;
-  border-radius: 4px;
 }
-
 .artist-bio h3 {
   max-width: 28rem;
   color: white;
@@ -945,7 +941,7 @@ body.product-detail-page-body .section-title {
 }
 .artwork-gallery img {
   width: 100%;            
-  height: 25vh;
+  min-height: 5vh;
   object-fit: cover;
   border-radius: 8px; 
 }
@@ -962,26 +958,46 @@ figcaption{
 }
 /******** Product Deatil Page 2 - Arc de Triomphe **********/
 body.arc .product-detail-hero {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), 
-                      url('../img/arc-hero.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), 
+  url('../img/arc-hero.jpg');
+}
+body.arc .museum-history {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),url('../img/arc-location.webp');
+}
+.fact-showcase {
+  display: flex;
+  align-items: center;
+  gap: 4rem;         
+  margin-bottom: 4rem; 
+}
+.fact-bio {
+  flex: 1;            
+}
+.fact-showcase .artwork-gallery {
+  flex: 1;            
+  justify-content: center; 
+}
+/* Stack them on top of each other on small screens */
+@media (max-width: 900px) {
+  .fact-showcase {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 
 
-
-
 /******** CONTACT PAGE   **********/
-
 /*
 .contact-detail-intro {
-  color:rgb(110, 76, 21);
-  font-size: 1.2rem;
+color:rgb(110, 76, 21);
+font-size: 1.2rem;
 
-  max-width: 40%;
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  background-color: white;
-  border-radius: 8px;
+max-width: 40%;
+margin-top: 2rem;
+padding: 1rem 2rem;
+background-color: white;
+border-radius: 8px;
 }*/
 .contact-detail-intro{
   min-width: 25rem;
@@ -1000,7 +1016,7 @@ body.contact-page-body {
   /*parallax scrolling*/
   background-attachment: fixed;
   color: white;
- 
+  
   padding-top: 0.5rem;
   height:45rem;
 }
@@ -1023,20 +1039,86 @@ body.contact-page-body {
   margin-bottom: 3rem;
 }
 .checkout-layout .section-title.main-header {
-    flex: 0 0 100%;    
-    margin-top: 3rem; 
-    margin-bottom: 0;
-    border-bottom: 2px solid var(--color-main-red);
+  flex: 0 0 100%;    
+  margin-top: 3rem; 
+  margin-bottom: 0;
+  border-bottom: 2px solid var(--color-main-red);
 }
 .cart-container, .form-container {
-    margin-top: 0; 
+  margin-top: 0; 
 }
 
-
-
-
-
-
-
+/* Footer Styling */
+footer {
+  background-color:#1e1e1e;
+  color:white;
+  padding: 3rem 1rem 2rem 5rem;
+  font-family: 'body-font', sans-serif;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-column, .footer-contact,.footer-center {
+  flex: 1;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.social-icons img:hover {
+  opacity: 1;
+}
+/* Slogan */
+.slogan {
+  font-size: 1.2rem;
+}
+/* Contact Section */
+.footer-contact h4 {
+  border: none; 
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  margin-top: 0;      
+  padding-left: 0;
+}
+.footer-contact p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  font-style: normal;
+}
+/*  Copyright  */
+.footer-legal {
+  padding-top: 1.5rem;
+  border-top: 1px solid #444; /* Subtle line from the image */
+  font-size: 0.75rem;
+  color: #888;
+}
+/* Responsive view */
+@media (max-width: 900px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-center{
+    margin-top:1rem;
+  }
+  .footer-legal {
+    text-align: center;
+  }
+}
 
 
