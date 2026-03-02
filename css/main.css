@@ -418,10 +418,6 @@ About page styling -------------------
   overflow-x: auto; 
   padding-bottom: 1rem; 
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
 .event-card { 
   flex: 0 0 45%; 
   border-radius: 0.5rem; 
