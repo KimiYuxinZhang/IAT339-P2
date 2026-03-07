@@ -26,17 +26,17 @@
     </ul>
   </nav>
   
-  <!--Cart section-->
   <div class="checkout-layout">
+    <!--Cart section-->
     <section class="cart-container">
       <h1>Your Itinerary</h1>
       <h2>2 destination</h2>
       <h3></h3>
       <div class="cart-header">
         <span class="header-product">Destination</span>
-        <span class="header-attr">Group Size</span>
+        <span class="header-attr">Number</span>
         <span class="header-attr">Days</span>
-        <span class="header-attr">Total Price</span>
+        <span class="header-attr">Price</span>
       </div>
       
       <div class="city-header">
@@ -53,16 +53,17 @@
           <img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum">
           <div class="product-details">
             <h4 class="product-name">Vatican Museum</h4>
-            <input class="note-input" type="text" placeholder="Message to us:">
           </div>
         </div>
         
         <div class="cart-attribute">
-          <input type="number" value="1" min="1" class="qty-field">
+          <label for="qty-vatican" class="hidden-label">Quantity for Vatican Museum</label>
+          <input type="number" id="qty-vatican" value="1" min="1" class="qty-field">
         </div>
         
         <div class="cart-attribute">
-          <input type="number" value="1" min="1" class="qty-field">
+          <label for="days-vatican" class="hidden-label">Number of Days for Vatican Museum</label>
+          <input type="number" id="days-vatican" value="1" min="1" class="qty-field">
         </div>
         
         <div class="cart-price">
@@ -76,14 +77,15 @@
           <img class="small-thumbnail" src="img/vatican-saint_peters_basilica.png" alt="vatican-saint_peters_basilica">
           <div class="product-details">
             <h4 class="product-name">Vatican Saint Peters Basilica</h4>
-            <input class="note-input" type="text" placeholder="Message to us:">
           </div>
         </div>
         <div class="cart-attribute">
-          <input type="number" value="1" min="1" class="qty-field">
+          <label for="qty-st-peters" class="hidden-label">Quantity for Vatican St. Peters Basilica</label>
+          <input type="number" id="qty-st-peters" value="1" min="1" class="qty-field">
         </div>
         <div class="cart-attribute">
-          <input type="number" value="1" min="1" class="qty-field">
+          <label for="days-st-peters" class="hidden-label">Number of Days for Vatican St. Peters Basilica</label>
+          <input type="number" id="days-st-peters" value="1" min="1" class="qty-field">
         </div>
         <div class="cart-price">
           <h5>$50.00</h5>
@@ -122,7 +124,7 @@
         <fieldset class="form-section">
           <legend>Payment Details</legend>
           <div class="payment-methods">
-            <label class="method-card">
+            <label class="method-selector">
               <input type="radio" name="pay-method" value="card" checked>
               <span class="card-content">Credit Card
                 <span class="box1-card-icons">
@@ -133,7 +135,7 @@
                 </span>
               </span>
             </label>
-            <label class="method-card">
+            <label class="method-selector">
               <input type="radio" name="pay-method" value="paypal">
               <span class="card-content">PayPal
                 <span class="box1-card-icons">
@@ -182,6 +184,13 @@
         </div>
         <div class="footer-center">
             <p class="slogan">Your dream trip start here</p>
+            <nav class="footer-nav">
+                  <ul>
+                    <li><a href="index.html">Style Guide</a></li>
+                    <li><a href="citation.html">Citations</a></li>
+                    <li><a href="https://github.com/KimiYuxinZhang/IAT339-P2/tree/main">Github</a></li>
+                  </ul>
+            </nav>
         </div>
         <div class="footer-contact">
             <p class="footer-heading">CONTACT US</p>
