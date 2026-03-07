@@ -868,17 +868,15 @@ COMBINED ELEMENTS -------------------
   background-size: cover;
   /*parallax scrolling*/
   background-attachment: fixed;
-  color: white;
-  padding: 0.5rem 2rem;
   height:45rem;
+  padding-top: 0.01rem;
 }
-.product-detail-hero nav{
-  background-color: white; 
+.product-detail-hero-content{
+  margin:2rem;
 }
-.product-detail-hero h1 {
+.product-detail-title h1{
   font-size: 6rem; 
   padding: 2rem;
-  margin: 0;
   /*method learned from : https://css-tricks.com/adding-stroke-to-web-text/*/
   color: transparent; 
   -webkit-text-stroke: 0.2rem white;
@@ -897,7 +895,6 @@ COMBINED ELEMENTS -------------------
 .product-detail-intro {
   color:rgb(110, 76, 21);
   font-size: 1.2rem;
-  
   max-width: 40%;
   margin-top: 2rem;
   padding: 1rem 2rem;
@@ -1043,12 +1040,11 @@ figcaption{
   .product-detail-page-body p{
     font-size: 0.9rem;
   }
-  .product-detail-hero{
-    padding:1rem;
+  .product-detail-hero-content{
+    margin:1rem;
   }
   .product-detail-title h1{
     font-size: 3.3rem;
-    padding: 1rem;
   }
   .product-detail-page-text{
     font-size: 1.7rem;
