@@ -157,20 +157,22 @@
     <!--Zilin-->
     <section class="image-element">
       <h3>Image as a Link</h3>
-      
+      <h4>Name: image-link</h4>
       <h4> CSS Selector</h4>
-      
+      <code>.image-link</code>
       <h4>Sample code:</h4>
       <code>
-        &lt;a href="https://www.louvre.fr/" target="_blank"&gt;
-        &lt;img src="img/image1.png" alt="Musée du Louvre Official Website" style="width:350px;height:200px;"&gt;
+        &lt;a href="arc_page.html" class="image-link""&gt;<br>
+        &lt;img src="img/lurve-2.png" alt="Musée du Louvre Official Website"&gt;<br>
         &lt;/a&gt;
       </code>
       
       <h4>Rendered element:</h4>
-      <a href="https://www.louvre.fr/" target="_blank">
-        <img src="img/image1.png" alt="Musée du Louvre Official Website" style="width:280px; height:350px;">
-      </a>
+      <div class="popular_destination" style="width:350px;height:auto;">
+        <a href="arc_page.html" class="image-link">
+          <img src="img/lurve-2.png" alt="Musée du Louvre Official Website">
+        </a>
+      </div>
       
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -184,6 +186,7 @@
         <!-- Four levels of heading-->
         <h3>Four levels of heading</h3>
         <h4> CSS Selector</h4>
+        <code>h1,h2,h3,h4</code>
         
         <h4>Sample code:</h4>
         <code>
@@ -194,9 +197,13 @@
         </code>
         
         <h4>Rendered element:</h4>
+        <p>H1 Name: Main title</p>
         <h1>The Louvre</h1>
+        <p>H2 Name: Product title</p>
         <h2>The Louvre</h2>
+        <p>H3 Name: Main heading</p>
         <h3>The Louvre</h3>
+        <p>H4 Name: Sub highlight</p>
         <h4>The Louvre</h4>
       </section>
       
@@ -218,8 +225,6 @@
         <!-- Numbered lists -->
         <section class="element">
           <h3>Numbered Lists</h3>
-          
-          <h4> CSS Selector</h4>
           
           <h4>Sample code</h4>
           <code>
@@ -489,7 +494,7 @@
             &lt;span class="header-attr"&gt;Days&lt;/span&gt;<br>
             &lt;span class="header-attr"&gt;Total Price&lt;/span&gt;<br>
             &lt;/div&gt;<br>
-            
+    
             &lt;div class="city-header"&gt;<br>
             &lt;span class="city-name"&gt;Rome&lt;/span&gt;<br>
             &lt;div class="header-date-selector"&gt;<br>
@@ -526,299 +531,462 @@
         
         
         
-        <h4>Rendered items</h4>
-        <section class="cart-container">
-          <h1>Your Itinerary</h1>
-          <h2>2 destination</h2>
-          <h3></h3>
-          <div class="cart-header">
-            <span class="header-product">Destination</span>
-            <span class="header-attr">Quantity</span>
-            <span class="header-attr">Days</span>
-            <span class="header-attr">Price</span>
-          </div>
-          
-          <div class="city-header">
-            <span class="city-name">Rome</span>
-            <div class="header-date-selector">
-              <label class="primary-label" for="rome-start-date">Start Date</label>
-              <input class="date-input-field" type="date" id="rome-start-date">
+          <h4>Rendered items</h4>
+          <section class="cart-container">
+            <h1>Your Itinerary</h1>
+            <h2>2 destination</h2>
+            <h3></h3>
+            <div class="cart-header">
+              <span class="header-product">Destination</span>
+              <span class="header-attr">Quantity</span>
+              <span class="header-attr">Days</span>
+              <span class="header-attr">Price</span>
             </div>
-          </div>
-          
-          <!--1st item-->
-          <div class="cart-item">
-            <div class="product-info">
-              <img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum">
-              <div class="product-details">
-                <h4 class="product-name">Vatican Museum</h4>
+            
+            <div class="city-header">
+              <span class="city-name">Rome</span>
+              <div class="header-date-selector">
+                <label class="primary-label" for="rome-start-date">Start Date</label>
+                <input class="date-input-field" type="date" id="rome-start-date">
               </div>
             </div>
             
-            <div class="cart-attribute">
-              <input type="number" value="1" min="1" class="qty-field">
-            </div>
-            
-            <div class="cart-attribute">
-              <input type="number" value="1" min="1" class="qty-field">
-            </div>
-            
-            <div class="cart-price">
-              <h5>$50.00</h5>
-            </div>
-          </div>
-          
-          <!--2nd item-->
-          <div class="cart-item">
-            <div class="product-info">
-              <img class="small-thumbnail" src="img/vatican-saint_peters_basilica.png" alt="vatican-saint_peters_basilica">
-              <div class="product-details">
-                <h4 class="product-name">Vatican Saint Peters Basilica</h4>
+            <!--1st item-->
+            <div class="cart-item">
+              <div class="product-info">
+                <img class="small-thumbnail" src="img/vatican_museum.png" alt="Vatican Museum">
+                <div class="product-details">
+                  <h4 class="product-name">Vatican Museum</h4>
+                </div>
+              </div>
+              
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              
+              <div class="cart-price">
+                <h5>$50.00</h5>
               </div>
             </div>
-            <div class="cart-attribute">
-              <input type="number" value="1" min="1" class="qty-field">
-            </div>
-            <div class="cart-attribute">
-              <input type="number" value="1" min="1" class="qty-field">
-            </div>
-            <div class="cart-price">
-              <h5>$50.00</h5>
-            </div>
-          </div>
-          
-          <div class="cart-footer">
-            <h2>Total: $100.00</h2>
-          </div>
-        </section>
-        </section>
-      
-      
-      <!--       ************        Company Info - Zilin    ***********             -->
-      <section class="element">
-        <h3> About the company</h3>
-        <!--Given the company, define the basic branding ideas.These should include: 
-        What does the company do, or offer?
-        Who is the company to potential customers? (as a person) Why might this company entice someone to purchase a product or service-->
-        <strong>What does the company do, or offer?</strong>
-        <p>Our company makes travel planning easy. Everyone deserves a hassle-free, relaxed trip without tourist traps or
-          the worry of connecting transit. Keeping track of tickets, booking hotels well in advance without backup plans,
-          or managing restaurant reservations takes the fun out of traveling - it's time consuming and draining. Finding a
-          good travel agency also involves a lot of tedious comparing. Many agencies lack flexibility, forcing you to wake
-          up at 5:00 AM and spend hours at shady souvenir shops.<b>We believe your time is better spent exploring the
-            destinations you actually care about.
-            That's why planning with us makes your travel better. </b>Simply visit our website, pick your favorite
-            destinations, choose your starting point, and select your hotel and food you like to eat. Tell us how you wish
-            to travel, and we will tailor the perfect plan for you in no time.</p>
             
-            <strong>Who is the company to potential customers? (as a person)</strong>
-            <p>Our service is for anyone planning a trip. It is for people who want a perfect itinerary tailored specifically
-              to their needs.</p>
+            <!--2nd item-->
+            <div class="cart-item">
+              <div class="product-info">
+                <img class="small-thumbnail" src="img/vatican-saint_peters_basilica.png" alt="vatican-saint_peters_basilica">
+                <div class="product-details">
+                  <h4 class="product-name">Vatican Saint Peters Basilica</h4>
+                </div>
+              </div>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              <div class="cart-attribute">
+                <input type="number" value="1" min="1" class="qty-field">
+              </div>
+              <div class="cart-price">
+                <h5>$50.00</h5>
+              </div>
+            </div>
+            
+            <div class="cart-footer">
+              <h2>Total: $100.00</h2>
+            </div>
+          </section>
+        </section>
+      
+        <!-- About page company event update scrolling listing -->
+
+        <section class="element">
+           <h3>About page company event update scrolling listing</h3>
+           <h4> CSS Selector</h4>
+           <p>.event-section<br>.event-scroll<br>.event-card<br>.card-link<br></p>
+           <h4>Sample code</h4>
+           <code class="code-style">
+            &lt;section class="event-section"&gt;
+              &lt;h2&gt;Latest Events&lt;/h2&gt;
+              &lt;div class="event-scroll"&gt;
+              &lt;div class="event-card"&gt;
+              &lt;a href="#" class="card-link"&gt;
+              &lt;img src="img/event-1.png" alt="icons of all airlines under star allience"&gt;
+              &lt;p&gt;&lt;strong&gt;Partnership with Star Allience &lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;We are proud to announce our new partnership with Star Alliance, expanding our global connectivity across more than 1,000 destinations worldwide. This collaboration allows our clients to enjoy smoother multi city itineraries, streamlined transfers, and access to premium airline benefits. It marks a significant step forward in elevating the international travel experience we offer. &lt;/p&gt;
+              &lt;/a&gt;
+              &lt;/div&gt;
+        
+              &lt;div class="event-card"&gt;
+              &lt;a href="#" class="card-link"&gt;
+              &lt;img src="img/event-2.png" alt="icon of four sasons"&gt;
+              &lt;p&gt;&lt;strong&gt;New Collaboration with Four Season Hotel & Resort. &lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;We have officially launched a new collaboration with Four Seasons Hotels and Resorts, bringing our travelers exclusive access to some of the world's most refined properties. Clients can now enjoy curated luxury stays, priority reservations, and personalized amenities. This partnership strengthens our commitment to delivering exceptional comfort and service.&lt;/p&gt;
+              &lt;/a&gt;
+              &lt;/div&gt;
+                  
+              &lt;div class="event-card"&gt;
+                  &lt;a href="#" class="card-link"&gt;
+                  &lt;img src="img/event-3.jpg" alt="Image of customer support agent answering client's request"&gt;
+                  &lt;p&gt;&lt;strong&gt;Launch of 24 Hour Client Support Service&lt;/strong&gt;&lt;/p&gt;
+                  &lt;p&gt;We have introduced a dedicated 24 hour global support line to assist travelers anytime, anywhere. Whether handling last minute itinerary adjustments or unexpected travel changes, our team is now available around the clock. This service ensures greater peace of mind throughout every journey.&lt;/p&gt;
+                  &lt;/a&gt;
+              &lt;/div&gt;
+                  
+              &lt;div class="event-card"&gt;
+                  &lt;a href="#" class="card-link"&gt;
+                  &lt;img src="img/event-4.jpg" alt="a family dining on balcony with the view of Effel Tower"&gt;
+                  &lt;p&gt;&lt;strong&gt;Expansion of Customized European Tours&lt;/strong&gt;&lt;/p&gt;
+                  &lt;p&gt;In response to growing demand, we have expanded our tailor made European travel programs with deeper local experiences and private guided access. From cultural immersions to exclusive culinary itineraries, our new offerings focus on authenticity and flexibility. Travelers now have more freedom to explore Europe on their own terms.&lt;/p&gt;
+                  &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/section&gt;
+            </code>
+            <h4>Rendered Items</h4>
+            <section class="event-section">
+              <h2>Latest Events</h2>
+              <div class="event-scroll">
+                  <div class="event-card">
+                      <a href="#" class="card-link">
+                      <img src="img/event-1.png" alt="icons of all airlines under star allience">
+                      <p><strong>Partnership with Star Allience </strong></p>
+                      <p>We are proud to announce our new partnership with Star Alliance, expanding our global connectivity across more than 1,000 destinations worldwide. This collaboration allows our clients to enjoy smoother multi city itineraries, streamlined transfers, and access to premium airline benefits. It marks a significant step forward in elevating the international travel experience we offer. </p>
+                      </a>
+                  </div>
+                  
+                  <div class="event-card">
+                      <a href="#" class="card-link">
+                      <img src="img/event-2.png" alt="icon of four sasons">
+                      <p><strong>New Collaboration with Four Season Hotel & Resort. </strong></p>
+                      <p>
+                          We have officially launched a new collaboration with Four Seasons Hotels and Resorts, bringing our travelers exclusive access to some of the world's most refined properties. Clients can now enjoy curated luxury stays, priority reservations, and personalized amenities. This partnership strengthens our commitment to delivering exceptional comfort and service.</p>
+                      </a>
+                  </div>
+                      
+                  <div class="event-card">
+                      <a href="#" class="card-link">
+                      <img src="img/event-3.jpg" alt="Image of customer support agent answering client's request">
+                      <p><strong>Launch of 24 Hour Client Support Service</strong></p>
+                      <p>We have introduced a dedicated 24 hour global support line to assist travelers anytime, anywhere. Whether handling last minute itinerary adjustments or unexpected travel changes, our team is now available around the clock. This service ensures greater peace of mind throughout every journey.</p>
+                      </a>
+                  </div>
+                      
+                  <div class="event-card">
+                      <a href="#" class="card-link">
+                      <img src="img/event-4.jpg" alt="a family dining on balcony with the view of Effel Tower">
+                      <p><strong>Expansion of Customized European Tours</strong></p>
+                      <p>In response to growing demand, we have expanded our tailor made European travel programs with deeper local experiences and private guided access. From cultural immersions to exclusive culinary itineraries, our new offerings focus on authenticity and flexibility. Travelers now have more freedom to explore Europe on their own terms.</p>
+                      </a>
+                  </div>  
+                </div>
+            </section>
+          </section>
+
+          <!--feedback form-->
+          <section class="element">
+            <h3>feedback form</h3>
+            <h4> CSS Selector</h4>
+            <p>.form-container<br>.input-form<br>.form-section<br>info-container<br>.form-group<br>.text-input-field<br>.message-box<br></p>
+            <h4>Sample code</h4>
+            <code class="code-style">
+              &lt;section class="form-container"&gt;
+                &lt;form class="input-form" method="post" action="#"&gt;
+                  &lt;fieldset class="form-section"&gt;
+                    &lt;div class="info-container"&gt;
+                      &lt;div class="form-group"&gt;
+                        &lt;input class="text-input-field" type="text" id="name" placeholder="Your Name"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-group"&gt;
+                        &lt;input class="text-input-field" type="email" id="email" placeholder="Your Email"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-group"&gt;
+                        &lt;input class="text-input-field" type="tel" id="phone-number" placeholder="Your Contact Number"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-group"&gt;
+                        &lt;textarea class="message-box" name="message" rows="10" cols="30"
+                            placeholder="We Value Your Feedback"&gt;&lt;/textarea&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/fieldset&gt;
+                  &lt;div class="form-footer"&gt;
+                    &lt;button type="submit" class="button-action"&gt;Submit&lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              &lt;/section&gt;
+            </code>
+              
+            <h4>Rendered Items</h4>
+            <section class="form-container">
+              <form class="input-form" method="post" action="#">
+                <fieldset class="form-section">
+                  <div class="info-container">
+                    <div class="form-group">
+                      <input class="text-input-field" type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                      <input class="text-input-field" type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                      <input class="text-input-field" type="tel" id="phone-number" placeholder="Your Contact Number">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="message-box" name="message" rows="10" cols="30"
+                          placeholder="We Value Your Feedback"></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-footer">
+                  <button type="submit" class="button-action">Submit</button>
+                </div>
+              </form>
+            </section>
+          </section>
+
+          <!-- Hero Section For Product Deatil Page-->
+          <section class="element">
+            <h3>Hero Section For Product Deatil Page</h3>
+            <h4>CSS Selector</h4>
+            <p>.product-detail-hero-content<br>.product-detail-title<br>.product-detail-page-text<br>product-detail-intro</p>
+            <h4>Sample code</h4>
+            <code class="code-style">
+              &lt;div class="product-detail-hero-content"&gt;
+                &lt;div class="product-detail-title"&gt; 
+                    &lt;h1&gt;
+                        Arc de Triomphe&lt;br&gt;
+                        &lt;span class="product-detail-page-text"&gt;Paris, France&lt;/span&gt;
+                    &lt;/h1&gt;
+                &lt;/div&gt;
+                
+                &lt;p class="product-detail-intro"&gt;
+                    Annual tourists (2025):  1.85 million
+                    &lt;br&gt;
+                    Low season: Jan to March.
+                    &lt;br&gt;
+                    High season: April to Oct.
+                &lt;/p&gt;
+                &lt;a class="add_button" href="#"&gt;Add to Itinerary&lt;/a&gt;
+              &lt;/div&gt;
+            </code>
+              
+            <h4>Rendered Items</h4>
+            <div class="product-detail-hero-content">
+              <div class="product-detail-title"> 
+                  <h1>
+                      Arc de Triomphe<br>
+                      <span class="product-detail-page-text">Paris, France</span>
+                  </h1>
+              </div>
+              
+              <p class="product-detail-intro">
+                  Annual tourists (2025):  1.85 million
+                  <br>
+                  Low season: Jan to March.
+                  <br>
+                  High season: April to Oct.
+              </p>
+              <a class="add_button" href="#">Add to Itinerary</a>
+            </div>
+          </section>
+
+          <!-- Detail Section For Product Deatil Page-->
+          <section class="element">
+            <h3>Detail Section For Product Deatil Page</h3>
+            <h4>CSS Selector</h4>
+            <p>.museum-history<br>.history-text<br>.map-box</p>
+            <h4>Sample code</h4>
+            <code class="code-style">
+              &lt;section class="museum-history"&gt;
+                  &lt;div class="history-text"&gt;
+                      &lt;h2 class="section-title"&gt;Arc de Triomphe&lt;/h2&gt;
+                      &lt;p&gt;The Arc de Triomphe is located on the right bank of the Seine at the centre of a dodecagonal configuration of twelve radiating avenues. It was commissioned in 1806, after the victory at Austerlitz by Emperor Napoleon at the peak of his fortunes. On July 29, 1836, after 30 years of construction, the Arc de triomphe was finally inaugurated.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class="map-box"&gt;
+                      &lt;img src="./img/arc-3.png" alt="The front of Arc de Triomphe"&gt;
+                  &lt;/div&gt;
+              &lt;/section&gt;
+            </code>
+              
+            <h4>Rendered Items</h4>
+            <section class="museum-history">
+              <div class="history-text">
+                  <h2 style="color:white" class="section-title">Arc de Triomphe</h2>
+                  <p style="color:white">The Arc de Triomphe is located on the right bank of the Seine at the centre of a dodecagonal configuration of twelve radiating avenues. It was commissioned in 1806, after the victory at Austerlitz by Emperor Napoleon at the peak of his fortunes. On July 29, 1836, after 30 years of construction, the Arc de triomphe was finally inaugurated.</p>
+              </div>
+              <div class="map-box">
+                  <img src="./img/arc-3.png" alt="The front of Arc de Triomphe">
+              </div>
+            </section>
+            
+            
+          </section>
+
+          <!-- Tips Section For Product Deatil Page-->
+          <section class="element">
+            <h3>Travel Tips Section For Product Deatil Page</h3>
+            <h4>CSS Selector</h4>
+            <p>.museum-areas<br>.area-grid<br>.area-card</p>
+            <h4>Sample code</h4>
+            <code class="code-style">
+              &lt;section class="museum-areas"&gt;
+                &lt;h2 class="center-title"&gt;Our Advice&lt;/h2&gt;
+                &lt;h3&gt;You can choose to visit for free or pay 24 to climb the tower, 284 stairs. &lt;/h3&gt;
+                &lt;div class="area-grid"&gt;
+                    &lt;div class="area-card"&gt;
+                        &lt;img src="img/arc-inside.jpg" alt="The small museum inside Arc de Triomphe displaying its history"&gt;
+                        &lt;h4&gt;Inside the Arc&lt;/h4&gt;
+                        &lt;p&gt;As you climb the 284 steps along the spiral staircases, you'll pass through a small museum and gift shop where you can catch your breath and discover the fascinating story behind Napoleon's grand vision. The exhibits showcase old sketches, models, and even some of the original design details of the monument.
+                        &lt;/p&gt;
+                        &lt;p&gt;&lt;i&gt;There is an elevator, but it is not always accessible.&lt;/i&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="area-card"&gt;
+                        &lt;img src="img/arc-flame.jpg" alt="The Eternal Flame Ceremony held underneath the Arc de Triomphe"&gt;
+                        &lt;h4&gt;The Eternal Flame Ceremony&lt;/h4&gt;
+                        &lt;p&gt;Beneath the Arc de Triomphe lies the Tomb of the Unknown Soldier, honoring those who lost their lives during World War I. Every evening at 6:30 PM, a solemn ceremony takes place to rekindle the eternal flame, a tradition that has continued every single night since 1923. &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="area-card"&gt;
+                        &lt;img src="img/arc-night.jpg" alt="The night view above Arc de Triomphe"&gt;
+                        &lt;h4&gt;Watching Paris Light Up&lt;/h4&gt;
+                        &lt;p&gt;From the top, you will see twelve grand avenues radiating outward like the points of a star, a design that gives the square its nickname, Place de l'Étoile. Time your visit for sunset and you will watch the Eiffel Tower sparkle in the distance while the Champs-Élysées glows with golden streetlights.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            </code>
+              
+            <h4>Rendered Items</h4>
+            <section class="museum-areas">
+                <h2 class="center-title">Our Advice</h2>
+                <h3 class="no-bg-color"></h3>
+                <p>You can choose to visit for free or pay 24 to climb the tower, 284 stairs. </p>
+                <div class="area-grid">
+                    <div class="area-card">
+                        <img src="img/arc-inside.jpg" alt="The small museum inside Arc de Triomphe displaying its history">
+                        <h4>Inside the Arc</h4>
+                        <p>As you climb the 284 steps along the spiral staircases, you'll pass through a small museum and gift shop where you can catch your breath and discover the fascinating story behind Napoleon's grand vision. The exhibits showcase old sketches, models, and even some of the original design details of the monument.
+                        </p>
+                        <p><i>There is an elevator, but it is not always accessible.</i></p>
+                    </div>
+                    <div class="area-card">
+                        <img src="img/arc-flame.jpg" alt="The Eternal Flame Ceremony held underneath the Arc de Triomphe">
+                        <h4>The Eternal Flame Ceremony</h4>
+                        <p>Beneath the Arc de Triomphe lies the Tomb of the Unknown Soldier, honoring those who lost their lives during World War I. Every evening at 6:30 PM, a solemn ceremony takes place to rekindle the eternal flame, a tradition that has continued every single night since 1923. </p>
+                    </div>
+                    <div class="area-card">
+                        <img src="img/arc-night.jpg" alt="The night view above Arc de Triomphe">
+                        <h4>Watching Paris Light Up</h4>
+                        <p>From the top, you will see twelve grand avenues radiating outward like the points of a star, a design that gives the square its nickname, Place de l'Étoile. Time your visit for sunset and you will watch the Eiffel Tower sparkle in the distance while the Champs-Élysées glows with golden streetlights.</p>
+                    </div>
+                </div>
+            </section>
+          </section>
+
+          <!-- Highlight Collection Section For Product Deatil Page-->
+          <section class="element">
+            <h3>Highlight Collection Section For Product Deatil Page</h3>
+            <h4>CSS Selector</h4>
+            <p>.museum-collection<br>.fact-showcase<br>.fact-bio<br>.artwork-gallery</p>
+            <h4>Sample code</h4>
+            <code class="code-style">
+              &lt;section class="museum-collection"&gt;
+                &lt;h2 class="center-title"&gt;Some Interesting Facts&lt;/h2&gt;
+                &lt;h3 class="no-bg-color"&gt;&lt;/h3&gt;
+                &lt;!-- fact 1--&gt;
+                &lt;div class="fact-showcase"&gt;
+                    &lt;div class="fact-bio"&gt;
+                        &lt;h4&gt;Inscriptions on the Walls&lt;/h4&gt;
+                        &lt;p&gt;The arch was built to celebrate military victories, and many of those victories are carved directly into its walls. The names of French generals are also inscribed there. If a name is underlined, it means that the general died in battle.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="artwork-gallery"&gt;
+                        &lt;figure class="artwork-item"&gt;
+                            &lt;img src="img/arc-fact-1.jpg" alt="Inscriptions of French Generals' name on the Arc de Triomphe's Wall"&gt;
+                            &lt;figcaption&gt;Inscriptions of French Generals' name on the Arc de Triomphe's Wall&lt;/figcaption&gt;
+                        &lt;/figure&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ...going on for more items
+              &lt;/section&gt;
+            </code>
+              
+            <h4>Rendered Items</h4>
+            <section class="museum-collection">
+              <h2 class="center-title">Some Interesting Facts</h2>
+              <h3 class="no-bg-color"></h3>
+              <!-- fact 1-->
+              <div class="fact-showcase">
+                  <div class="fact-bio">
+                      <h4>Inscriptions on the Walls</h4>
+                      <p>The arch was built to celebrate military victories, and many of those victories are carved directly into its walls. The names of French generals are also inscribed there. If a name is underlined, it means that the general died in battle.</p>
+                  </div>
+                  <div class="artwork-gallery">
+                      <figure class="artwork-item">
+                          <img src="img/arc-fact-1.jpg" alt="Inscriptions of French Generals' name on the Arc de Triomphe's Wall">
+                          <figcaption>Inscriptions of French Generals' name on the Arc de Triomphe's Wall</figcaption>
+                      </figure>
+                  </div>
+              </div>
+              <!-- fact 2-->
+              <div class="fact-showcase">
+                  <div class="fact-bio">
+                      <h4>From 1806 to 1836</h4>
+                      <p>Commissioned by Napoleon to celebrate France's military triumphs, the first stone of this majestic arch was laid on his birthday, August 15, 1806. However, construction stretched over three decades and was not completed until 1836, long after Napoleon's death in 1821.</p>
+                  </div>
+                  <div class="artwork-gallery">
+                      <figure class="artwork-item">
+                          <img src="img/arc-fact-2.webp" alt="A drawing of Arc de Triomphe under construction when Napoleon I and Marie-Louise enter Paris on April 2, 1810">
+                          <figcaption>A drawing of Arc de Triomphe under construction when Napoleon I and Marie-Louise enter Paris on April 2, 1810</figcaption>
+                      </figure>
+                  </div>
+              </div>
+            </section>
+          </section>
+            <!--       ************        Company Info - Zilin    ***********             -->
+            <section class="element">
+              <h3> About the company</h3>
+              <!--Given the company, define the basic branding ideas.These should include: 
+              What does the company do, or offer?
+              Who is the company to potential customers? (as a person) Why might this company entice someone to purchase a product or service-->
+              <strong>What does the company do, or offer?</strong>
+              <p>Our company makes travel planning easy. Everyone deserves a hassle-free, relaxed trip without tourist traps or
+                the worry of connecting transit. Keeping track of tickets, booking hotels well in advance without backup plans,
+                or managing restaurant reservations takes the fun out of traveling - it's time consuming and draining. Finding a
+                good travel agency also involves a lot of tedious comparing. Many agencies lack flexibility, forcing you to wake
+                up at 5:00 AM and spend hours at shady souvenir shops.<b>We believe your time is better spent exploring the
+                destinations you actually care about.
+                That's why planning with us makes your travel better. </b>Simply visit our website, pick your favorite
+                destinations, choose your starting point, and select your hotel and food you like to eat. Tell us how you wish
+                to travel, and we will tailor the perfect plan for you in no time.
+              </p>
+              <strong>Who is the company to potential customers? (as a person)</strong>
+              <p>Our service is for anyone planning a trip. It is for people who want a perfect itinerary tailored specifically to their needs.</p>
               <strong>Why might this company entice someone to purchase a product or service</strong>
               <p>Our service fills the gap between planning a trip yourself and using a traditional travel agency's fixed plans.
                 It is custom-made and highly flexible. You simply tell us what you like to eat, hotels of your liking, perfered
                 transit drop your destinations in the itinerary and we will arrange the routes, restaurants, accommodations,
-                transit, and tickets for you all at once.</p>
-
-                <!-- About page company event update scrolling listing -->
-
-                <section class="element">
-                  <h3>About page company event update scrolling listing</h3>
-                  <h4> CSS Selector</h4>
-                  <p>.event-section<br>.event-scroll<br>.event-card<br>.card-link<br></p>
-                  <h4>Sample code</h4>
-                  <code class="code-style">
-                    &lt;!-- Company updates& events--&gt;
-    &lt;section class="event-section"&gt;
-        &lt;h2&gt;Latest Events&lt;/h2&gt;
-        &lt;div class="event-scroll"&gt;
-            &lt;div class="event-card"&gt;
-                &lt;a href="#" class="card-link"&gt;
-                &lt;img src="img/event-1.png" alt="icons of all airlines under star allience"&gt;
-                &lt;p&gt;&lt;strong&gt;Partnership with Star Allience &lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;We are proud to announce our new partnership with Star Alliance, expanding our global connectivity across more than 1,000 destinations worldwide. This collaboration allows our clients to enjoy smoother multi city itineraries, streamlined transfers, and access to premium airline benefits. It marks a significant step forward in elevating the international travel experience we offer. &lt;/p&gt;
-                &lt;/a&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="event-card"&gt;
-                &lt;a href="#" class="card-link"&gt;
-                &lt;img src="img/event-2.png" alt="icon of four sasons"&gt;
-                &lt;p&gt;&lt;strong&gt;New Collaboration with Four Season Hotel & Resort. &lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;
-                    We have officially launched a new collaboration with Four Seasons Hotels and Resorts, bringing our travelers exclusive access to some of the world's most refined properties. Clients can now enjoy curated luxury stays, priority reservations, and personalized amenities. This partnership strengthens our commitment to delivering exceptional comfort and service.&lt;/p&gt;
-                &lt;/a&gt;
-            &lt;/div&gt;
-                
-            &lt;div class="event-card"&gt;
-                &lt;a href="#" class="card-link"&gt;
-                &lt;img src="img/event-3.jpg" alt="Image of customer support agent answering client's request"&gt;
-                &lt;p&gt;&lt;strong&gt;Launch of 24 Hour Client Support Service&lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;We have introduced a dedicated 24 hour global support line to assist travelers anytime, anywhere. Whether handling last minute itinerary adjustments or unexpected travel changes, our team is now available around the clock. This service ensures greater peace of mind throughout every journey.&lt;/p&gt;
-                &lt;/a&gt;
-            &lt;/div&gt;
-                
-            &lt;div class="event-card"&gt;
-                &lt;a href="#" class="card-link"&gt;
-                &lt;img src="img/event-4.jpg" alt="a family dining on balcony with the view of Effel Tower"&gt;
-                &lt;p&gt;&lt;strong&gt;Expansion of Customized European Tours&lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;In response to growing demand, we have expanded our tailor made European travel programs with deeper local experiences and private guided access. From cultural immersions to exclusive culinary itineraries, our new offerings focus on authenticity and flexibility. Travelers now have more freedom to explore Europe on their own terms.&lt;/p&gt;
-                &lt;/a&gt;
-            &lt;/div&gt;
-                
-        &lt;/div&gt;
-    &lt;/section&gt;
-
-
-
-
-                  </code>
-                  <h4>Rendered Items</h4>
-                  <!-- Company updates& events-->
-    <section class="event-section">
-      <h2>Latest Events</h2>
-      <div class="event-scroll">
-          <div class="event-card">
-              <a href="#" class="card-link">
-              <img src="img/event-1.png" alt="icons of all airlines under star allience">
-              <p><strong>Partnership with Star Allience </strong></p>
-              <p>We are proud to announce our new partnership with Star Alliance, expanding our global connectivity across more than 1,000 destinations worldwide. This collaboration allows our clients to enjoy smoother multi city itineraries, streamlined transfers, and access to premium airline benefits. It marks a significant step forward in elevating the international travel experience we offer. </p>
-              </a>
-          </div>
-          
-          <div class="event-card">
-              <a href="#" class="card-link">
-              <img src="img/event-2.png" alt="icon of four sasons">
-              <p><strong>New Collaboration with Four Season Hotel & Resort. </strong></p>
-              <p>
-                  We have officially launched a new collaboration with Four Seasons Hotels and Resorts, bringing our travelers exclusive access to some of the world's most refined properties. Clients can now enjoy curated luxury stays, priority reservations, and personalized amenities. This partnership strengthens our commitment to delivering exceptional comfort and service.</p>
-              </a>
-          </div>
-              
-          <div class="event-card">
-              <a href="#" class="card-link">
-              <img src="img/event-3.jpg" alt="Image of customer support agent answering client's request">
-              <p><strong>Launch of 24 Hour Client Support Service</strong></p>
-              <p>We have introduced a dedicated 24 hour global support line to assist travelers anytime, anywhere. Whether handling last minute itinerary adjustments or unexpected travel changes, our team is now available around the clock. This service ensures greater peace of mind throughout every journey.</p>
-              </a>
-          </div>
-              
-          <div class="event-card">
-              <a href="#" class="card-link">
-              <img src="img/event-4.jpg" alt="a family dining on balcony with the view of Effel Tower">
-              <p><strong>Expansion of Customized European Tours</strong></p>
-              <p>In response to growing demand, we have expanded our tailor made European travel programs with deeper local experiences and private guided access. From cultural immersions to exclusive culinary itineraries, our new offerings focus on authenticity and flexibility. Travelers now have more freedom to explore Europe on their own terms.</p>
-              </a>
-          </div>
-              
-      </div>
-  </section>
-
-
-                </section>
-
-
-
-
-
-              <!--feedback form-->
-              <section class="element">
-                <h3>feedback form</h3>
-                <h4> CSS Selector</h4>
-                <p>
-                  .form-container<br>.input-form<br>.form-section<br>info-container<br>.form-group<br>.text-input-field<br>.message-box<br>
-                </p>
-                <h4>Sample code</h4>
-                <code class="code-style">
-                  &lt;section class="form-container"&gt;
-                  &lt;form class="input-form" method="post" action="#"&gt;
-                    &lt;fieldset class="form-section"&gt;
-                      &lt;div class="info-container"&gt;
-                        &lt;div class="form-group"&gt;
-                          &lt;input class="text-input-field" type="text" id="name" placeholder="Your Name"&gt;
-                        &lt;/div&gt;
-                        &lt;div class="form-group"&gt;
-                          &lt;input class="text-input-field" type="email" id="email" placeholder="Your Email"&gt;
-                        &lt;/div&gt;
-                        &lt;div class="form-group"&gt;
-                          &lt;input class="text-input-field" type="tel" id="phone-number" placeholder="Your Contact Number"&gt;
-                        &lt;/div&gt;
-                        &lt;div class="form-group"&gt;
-                          &lt;textarea class="message-box" name="message" rows="10" cols="30"
-                            placeholder="We Value Your Feedback"&gt;&lt;/textarea&gt;
-                        &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/fieldset&gt;
-                    &lt;div class="form-footer"&gt;
-                      &lt;button type="submit" class="button-action"&gt;Submit&lt;/button&gt;
-                    &lt;/div&gt;
-                  &lt;/form&gt;
-                &lt;/section&gt;
-
-
-
-                </code>
-              
-                <h4>Rendered Items</h4>
-                <section class="form-container">
-                  <form class="input-form" method="post" action="#">
-                    <fieldset class="form-section">
-                      <div class="info-container">
-                        <div class="form-group">
-                          <input class="text-input-field" type="text" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                          <input class="text-input-field" type="email" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                          <input class="text-input-field" type="tel" id="phone-number" placeholder="Your Contact Number">
-                        </div>
-                        <div class="form-group">
-                          <textarea class="message-box" name="message" rows="10" cols="30"
-                            placeholder="We Value Your Feedback"></textarea>
-                        </div>
-                      </div>
-                    </fieldset>
-                    <div class="form-footer">
-                      <button type="submit" class="button-action">Submit</button>
-                    </div>
-                  </form>
-                </section>
-              </section>
-
-
-
-
-
-
-
-                
-                <!--From your branding ideas, assemble brand components including:
-                
+                transit, and tickets for you all at once.
+              </p>
+              <!--From your branding ideas, assemble brand components including:
                 Fonts
                 Colour palettes
                 Potential imagery, and, or, art direction
                 -->
                 
-                <h3> Fonts&Colour palettes</h3>
-                <h4>Sample code</h4>
-                <code>
-                  &lt;p&gt; Font: Comfortaa &lt;/p&gt;<br>
-                  &lt;p&gt; Color: Warm orange &lt;/p&gt;<br>
-                  &lt;div style="background-color: #FF5722;  padding: 20px; line-height: 0.9;"&gt;
-                  &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc...&lt;/p&gt;<br><br>
+              <h3> Fonts&Colour palettes</h3>
+              <h4>Sample code</h4>
+              <code>
+                &lt;p&gt; Font: Comfortaa &lt;/p&gt;<br>
+                &lt;p&gt; Color: Warm orange &lt;/p&gt;<br>
+                &lt;div style="background-color: #FF5722;  padding: 20px; line-height: 0.9;"&gt;
+                &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc...&lt;/p&gt;<br><br>
                   
-                  &lt;p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"&gt; Font:Segoe UI&lt;/p&gt;<br>
-                  &lt;p style="font-family: 'Segoe UI', sans-serif;"&gt; Color: Vabriant green &lt;/p&gt;<br>
-                  &lt;div style="font-family: 'Segoe UI', sans-serif; background-color: #cbff22;  padding: 20px; line-height: 0.9;"&gt;<br>
-                  &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc...&lt;/p&gt;
-                </code>
-                
-                
-                <h4>Rendered items</h4>
-                
-                <p> Font: Comfortaa <br> Purpose: Body & Button Font<br>Color: Warm orange</p>
-                <div
-                style="background-color: #FF5722;  padding: 20px; line-height: 0.9;">
+                &lt;p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"&gt; Font:Segoe UI&lt;/p&gt;<br>
+                &lt;p style="font-family: 'Segoe UI', sans-serif;"&gt; Color: Vabriant green &lt;/p&gt;<br>
+                &lt;div style="font-family: 'Segoe UI', sans-serif; background-color: #cbff22;  padding: 20px; line-height: 0.9;"&gt;<br>
+                &lt;p style="font-size: 80px; margin: 0;"&gt;AaBbCc...&lt;/p&gt;
+              </code>
+
+              <h4>Rendered items</h4>
+              <p> Font: Comfortaa <br> Purpose: Body & Button Font<br>Color: Warm orange</p>
+              <div style="background-color: #FF5722;  padding: 20px; line-height: 0.9;">
                 <p style="font-size: 80px; margin: 0;">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Xx Yy Zz <br>0 1 2 3 4 5 6 7 8 9</p>
               </div>
               
@@ -826,9 +994,10 @@
               <div style="font-family: 'Segoe UI', sans-serif; background-color: rgb(75, 75, 75);  color:white; padding: 20px; line-height: 0.9;">
                 <p style="font-size: 80px; margin: 0;">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Xx Yy Zz <br>0 1 2 3 4 5 6 7 8 9</p>
               </div>
-      </section>
+            </section>
             
-      <section>
+            <!--  Imagery Exploration -->
+            <section>
               <h3>Potential imagery</h3>
               <h4> CSS Selector</h4>
               <code>
@@ -860,49 +1029,46 @@
               <img src="img/lurve-4.png" alt="The interior of Lurve Museum showing the upside down pyramid" width="500">
               <img src="img/egypt-kom_ombo_temple.png" alt="The human statues outside of kom ombo temple in Egypt" width="800">
               <img src="img/france-mont_st_michel.png" alt="A long shot of Mont Saint-Michel" width="900">
+            </section>
       </section>
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+      <!-- // COMBINED ELEMENTS SECTION -->
           
           
           
-          <footer>
-            <div class="footer-main">
-              <div class="footer-column">
-                <div class="footer-logo">
-                  <p>Dream Trip</p>
-                </div>
-                <div class="social-icons">
-                  <a href="#"><img src="img/fb-icon.png" alt="Facebook"></a>
-                  <a href="#"><img src="img/x-icon.png" alt="X"></a>
-                  <a href="#"><img src="img/insta-icon.png" alt="Instagram"></a>
-                </div>
-              </div>
-
-              <div class="footer-center">
-                <p class="slogan">Your dream trip start here</p>
-                <nav class="footer-nav">
-                  <ul>
-                    <li><a href="index.html">Style Guide</a></li>
-                    <li><a href="citation.html">Citations</a></li>
-                    <li><a href="https://github.com/KimiYuxinZhang/IAT339-P2/tree/main">Github</a></li>
-                  </ul>
-                </nav>
-              </div>
-
-              <div class="footer-contact">
-                <p class="footer-heading">CONTACT US</p>
-                <p>hello@dreamy.co</p>
-                <p>
-                  8888 University Dr W, Burnaby, BC V5A 1S6<br>
-                  Dreamy Inc
-                </p>
-                <p>+1 234 567 8910</p>
-              </div>
+      <footer>
+        <div class="footer-main">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <p>Dream Trip</p>
             </div>
-            <div class="footer-legal">
-              <p>&copy; 2025 Dreamy Inc. All rights reserved</p>
+            <div class="social-icons">
+              <a href="#"><img src="img/fb-icon.png" alt="Facebook"></a>
+              <a href="#"><img src="img/x-icon.png" alt="X"></a>
+              <a href="#"><img src="img/insta-icon.png" alt="Instagram"></a>
             </div>
-          </footer>        
-        </body>
-        </html>
+          </div>
+
+          <div class="footer-center">
+             <p class="slogan">Your dream trip start here</p>
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="index.html">Style Guide</a></li>
+                <li><a href="citation.html">Citations</a></li>
+                 <li><a href="https://github.com/KimiYuxinZhang/IAT339-P2/tree/main">Github</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-contact">
+            <p class="footer-heading">CONTACT US</p>
+            <p>hello@dreamy.co</p>
+            <p>8888 University Dr W, Burnaby, BC V5A 1S6<br>Dreamy Inc</p>
+            <p>+1 234 567 8910</p>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <p>&copy; 2025 Dreamy Inc. All rights reserved</p>
+        </div>
+      </footer>        
+</body>
+</html>
