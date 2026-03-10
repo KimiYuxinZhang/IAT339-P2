@@ -76,7 +76,7 @@ a {
 nav {
   background: #e6eff2dc; 
   width:100%;
-  flex-wrap: wrap;
+  
 }
 nav ul {
   color:white;
@@ -106,6 +106,15 @@ a:focus {
   color: #FF5722;
   text-decoration-thickness: 0.2rem;
   
+}
+
+
+
+@media (max-width:480px){
+  nav ul{
+    font-size: 1.2rem;
+  }
+
 }
 
 /*change hover/focus effect (red underline) for image as a link*/
@@ -256,7 +265,7 @@ input:focus{
   
 }
 .popular_destination {
-  flex:0 0 20rem;
+  flex:0 0 19rem;
   background-color: #f9f9f9; 
   border: 1px solid #ddd; 
   border-radius: 0.5rem; 
