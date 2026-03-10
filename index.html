@@ -139,17 +139,25 @@
     <h4>Rendered element:</h4>
     <h1></h1>
     <div class="payment-methods">
-      <h2>Please Select Payment method</h2>
-            <label class="method-selector">
-              <input type="radio" name="pay-method" value="card" checked>
-              <span class="card-content">Credit Card
-              </span>
-            </label>
-            <label class="method-selector">
-              <input type="radio" name="pay-method" value="paypal">
-              <span class="card-content">PayPal
-              </span>
-            </label>
+      <label class="method-selector">
+        <input type="radio" name="pay-method" value="card" checked>
+        <span class="card-content">Credit Card
+          <span class="box1-card-icons">
+            <img src="img/visa.png" alt="visa icon">
+            <img src="img/mastercard.png" alt="mastercard icon">
+            <img src="img/amex.png" alt="amex icon">
+            <img src="img/unionpay.png" alt="unionpay icon">
+          </span>
+        </span>
+      </label>
+      <label class="method-selector">
+        <input type="radio" name="pay-method" value="paypal">
+        <span class="card-content">PayPal
+          <span class="box1-card-icons">
+            <img src="img/paypal.png" alt="paypal icon">
+          </span>
+        </span>
+      </label>
     </div>
   </section>
     
@@ -791,6 +799,7 @@
 
           <!-- Detail Section For Product Deatil Page-->
           <section class="element">
+            <h2></h2>
             <h3>Detail Section For Product Deatil Page</h3>
             <h4>CSS Selector</h4>
             <p>.museum-history<br>.history-text<br>.map-box</p>
